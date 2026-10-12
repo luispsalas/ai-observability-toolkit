@@ -36,6 +36,14 @@ To find the evidence for a subcategory, filter the CSV by `subcategory_id`. To f
 
 **Metrics evidence the MEASURE function and little else.** 10 of the 11 subcategories with any primary evidence are in MEASURE. GOVERN and MAP ask mostly for policies, roles, context and documentation, which a metric cannot show: none of the 19 GOVERN subcategories and 13 of the 18 MAP subcategories have a metric. That is expected, and it is the useful point for anyone building an AI governance program on metrics: a dashboard covers roughly one function out of four.
 
+**The 46 subcategories with no metric are mostly not missing metrics.** The framework describes itself as "outcome-focused and non-prescriptive": it lists outcomes to achieve and defines no metrics of its own, and many of those outcomes are not measurable things. Sorted by what they actually ask for, the 46 fall into three groups:
+
+- **43 ask for something other than a metric:** policies, assigned roles, training, documented context, risk tolerances, consultation. That is all 19 GOVERN subcategories, 13 in MAP, 5 in MANAGE and 6 in MEASURE (1.1 to 1.3, 2.1, 2.2 and 4.1). They are met with other kinds of assets, such as templates, procedures and documented decisions, which this toolkit can offer but a metric catalog cannot.
+- **1 is a real metric gap:** fairness and bias (MEASURE 2.11), described below.
+- **2 are hard by nature:** MEASURE 2.13 asks whether the measurement itself works, and MEASURE 3.2 covers risks for which "metrics are not yet available".
+
+So "metrics reach 26 of 72 subcategories" is a map of where metrics belong, not a coverage score. Three subcategories that do have a link would also be stronger with metrics NIST's Playbook names and the catalog lacks: energy, water and emissions indicators (MEASURE 2.12), appeal and feedback-participation rates (MEASURE 3.3), and comparison with simpler models or human baselines (MEASURE 3.1).
+
 **The catalog is weighted toward performance, measured on test sets.** 19 of the 42 metrics link to MEASURE 2.3 (performance measured in conditions like deployment), and 10 of them link to nothing else. NIST's guidance for that subcategory warns that performance measured on test data alone is insufficient, and asks for measurement in the deployment context with the people who use the system, and for the differences between the test setting and deployment to be documented. Retrieval and agent metrics in particular say a great deal about how well the system works on a test set and little about its other trustworthiness characteristics.
 
 **NIST asks for comparisons the catalog cannot make.** The Playbook's guidance for MEASURE 3.1 asks to compare an AI system with simpler or traditional models and with human baseline performance. No metric in the catalog does this.

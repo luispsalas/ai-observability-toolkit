@@ -15,9 +15,9 @@
 | | |
 |---|---|
 | **Goal** | Give teams that run AI systems a way to tell whether those systems are working, and to improve them when the answer is a judgment rather than a pass or fail. |
-| **What was done** | The 42 metrics of the [AI Metrics Catalog](https://luispsalas.github.io/ai-governance-scorecard/), which this repository replaces, moved into one data file, and mapped onto the 72 subcategories of the NIST AI RMF 1.0. |
-| **Governance** | The framework is quoted from NIST's own PDF, kept in the repository and checked against a second extraction. Every crosswalk link states its reason, links in doubt were checked against NIST's Playbook, and the remaining uncertain calls are listed. |
-| **Measurement** | 82 crosswalk links (6 marked uncertain, 17 quoting the NIST text they rest on), 17 data checks, each seen to catch a planted error and to miss it when switched off. |
+| **What it offers** | Assets for measuring and observing AI systems: reference data and framework crosswalks, data quality extended to generated output, methods for improving results that have no exact grade, and worked use cases on real systems, from privacy gates and AI search to agents. |
+| **Governance** | Every framework or standard is quoted from its primary document and kept in the repository. Every judgment states its reason, and calls that could go either way are marked uncertain rather than settled. |
+| **Measurement** | Every asset says what it was tested on and how many cases, and what that cannot show. Every check script is seen to catch a planted error, and to miss it when switched off, before it is trusted. |
 
 ## What's in the toolkit
 
