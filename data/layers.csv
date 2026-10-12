@@ -1,0 +1,12 @@
+order,layer,description
+1,Retrieval (RAG),How well the system finds the right context before generating — the foundation of any RAG product.
+2,Generation,"Quality of the produced answer: grounded, relevant, correct, and consistent across changes."
+3,Prompt Engineering,Reliability of prompts and resistance to adversarial input as prompts are versioned and exposed.
+4,Agentic AI,"Whether agents use tools, complete tasks, plan, hand off and recall memory successfully."
+5,Safety & Trust,Harm prevention and appropriate refusal — table stakes for any consumer-facing surface.
+6,Data Governance,"Governance of the data assets feeding AI: classification, PII, quality, metadata and lineage."
+7,AI Governance,"Governance of AI decisions: explainability, traceability, human oversight and auditability."
+8,ML Observability,Detecting distribution shift in inputs and predictions once models run in production.
+9,Operations,"Runtime health: latency, responsiveness, availability and error rates."
+10,Cost & FinOps,Token usage and unit economics — central to model selection and local-LLM planning.
+11,Business Value,"Does it move the needle? Adoption, satisfaction and measurable business impact."

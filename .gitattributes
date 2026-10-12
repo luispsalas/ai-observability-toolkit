@@ -1,0 +1,4 @@
+# GitHub's language bar counts only "programming" and "markup" types, so a kit made
+# of Markdown and CSV would show as 100% Python. Count the documents too.
+*.md linguist-detectable=true
+*.csv linguist-detectable=true

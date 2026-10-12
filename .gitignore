@@ -1,0 +1,9 @@
+# Working notes never ship: the private record lives in projects/ai-observability-metrics/,
+# outside this folder. These entries are a backstop only.
+CONTEXT.md
+BACKLOG.md
+notes-*.md
+
+.DS_Store
+__pycache__/
+*.pyc

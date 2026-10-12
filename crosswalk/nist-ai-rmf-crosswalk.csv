@@ -1,0 +1,83 @@
+metric_id,subcategory_id,relation,uncertain,rationale,basis,basis_quote
+M01,MEASURE 2.3,primary,no,Measures retrieval performance on a test set built to resemble deployment queries.,,
+M02,MEASURE 2.3,primary,no,Measures retrieval performance on a test set built to resemble deployment queries.,,
+M03,MEASURE 2.3,primary,no,Measures retrieval performance on a test set built to resemble deployment queries.,,
+M04,MEASURE 2.5,primary,no,"Shows how output degrades when inputs move away from clean conditions, a limit of generalizability the subcategory asks to document.",,
+M04,MEASURE 2.7,supporting,no,"NIST ties resilience to robustness against unexpected use, which is what this metric tests; it does not test security.",Playbook MEASURE 2.7,Resilience relates to robustness and encompasses unexpected or adversarial use (or abuse or misuse) of the model or data.
+M05,MEASURE 2.3,primary,no,Measures ranking performance on a test set built to resemble deployment queries.,,
+M06,MEASURE 2.3,primary,no,Measures ranking performance on a test set built to resemble deployment queries.,,
+M07,MEASURE 2.5,primary,no,Whether answers are grounded in their sources is direct evidence that output is valid.,,
+M07,MEASURE 2.3,supporting,no,Usually reported as one of the performance measures for a generative system.,,
+M08,MEASURE 2.3,primary,no,"Measures whether answers address the user's need, a core performance criterion.",,
+M09,MEASURE 2.3,primary,no,"Measures agreement with ground truth, the most direct performance criterion.",,
+M09,MEASURE 2.5,supporting,no,"Correctness on a reference set supports the claim that the system is valid, within that set's coverage.",,
+M10,MEASURE 2.5,primary,no,"The framework counts accuracy, closeness to values accepted as true, as part of validity; citations that support their claims are that closeness.",AI RMF 1.0 §3.1,"closeness of results of observations, computations, or estimates to the true values or the values accepted as being true"
+M10,MEASURE 2.8,supporting,no,"Accurate citations let a reader trace a claim to its source, which supports transparency.",,
+M11,MEASURE 2.3,primary,no,"Measures closeness to reference answers, a quantitative performance criterion.",,
+M12,MEASURE 2.3,primary,no,Measures how often prompts produce acceptable output on a test set.,,
+M12,MEASURE 2.5,supporting,no,"Tracked across prompt versions, it shows whether output stays reliable.",,
+M13,MEASURE 2.7,primary,no,Detecting malicious prompts is a direct security evaluation of the system.,,
+M14,MEASURE 2.5,primary,no,Unsupported statements are invalid output; their rate is direct evidence against validity.,,
+M14,MEASURE 2.3,supporting,no,Usually reported among the performance measures for a generative system.,,
+M14,MEASURE 2.4,supporting,no,Becomes production monitoring when sampled from live traffic.,,
+M15,MEASURE 2.6,primary,yes,"Read broadly, harmful content is a safety risk; the framework defines safety as endangering life, health, property or the environment, so the fit is settled when the Generative AI Profile is mapped.",AI RMF 1.0 §3.2,"not under defined conditions, lead to a state in which human life, health, property, or the environment is endangered"
+M16,MEASURE 2.6,primary,yes,"Policy breaches are safety failures only where the policy protects life, health, property or the environment; settled when the Generative AI Profile is mapped.",AI RMF 1.0 §3.2,"not under defined conditions, lead to a state in which human life, health, property, or the environment is endangered"
+M16,MANAGE 4.3,supporting,no,Each violation is an error to track and communicate under incident processes.,,
+M17,MEASURE 2.6,primary,yes,"Refusing unsafe requests is a way to fail safely, which the subcategory names; whether the requests endanger anyone in the framework's sense is settled with the Generative AI Profile.",AI RMF 1.0 §3.2,"not under defined conditions, lead to a state in which human life, health, property, or the environment is endangered"
+M18,MEASURE 2.3,primary,no,NIST names prediction latency as an efficiency criterion of performance.,Playbook MEASURE 2.3,"Measure and document performance criteria such as validity (false positive rate, false negative rate, etc.) and efficiency (training times, prediction latency, etc.) related to ground truth within the deployment context of use."
+M18,MEASURE 2.4,primary,no,Latency is a basic behavior of the system monitored in production.,,
+M19,MAP 3.2,supporting,no,Token use drives the running cost the subcategory asks to examine.,,
+M19,MEASURE 2.12,supporting,yes,"NIST asks for energy, water and emissions indicators; token use is only a proxy for them.",Playbook MEASURE 2.12,"Identify and implement key indicators of AI system energy and water consumption and efficiency, and/or GHG emissions."
+M20,MANAGE 2.1,supporting,no,"The resources needed to run the system, set against non-AI alternatives, start with its unit cost.",,
+M20,MANAGE 2.2,supporting,no,Sustaining value depends on what each request costs.,,
+M20,MAP 3.2,supporting,no,Cost per request is a direct input to the costs the subcategory asks to examine.,,
+M21,MEASURE 2.3,primary,no,"Measures whether the agent's tool calls succeed, a performance criterion.",,
+M21,MEASURE 2.5,supporting,no,Failed tool calls are a common reliability failure for agents.,,
+M22,MEASURE 2.3,primary,no,Task completion is the main performance criterion for an agent.,,
+M22,MANAGE 1.1,supporting,no,Whether the agent completes its tasks feeds the decision on whether it achieves its purpose.,,
+M23,MEASURE 2.3,primary,no,Measures whether work passes correctly between agents.,,
+M24,MEASURE 2.3,primary,no,Measures the quality of the agent's plans.,,
+M25,MEASURE 2.3,primary,no,Measures whether the agent recalls the right stored information.,,
+M26,MEASURE 2.3,primary,no,Measures the accuracy of an AI classifier of data assets.,,
+M26,MEASURE 2.10,supporting,no,Classifying which data is sensitive is how personally sensitive information in datasets gets documented.,Playbook MEASURE 2.10,"Document collection, use, management, and disclosure of personally sensitive information in datasets"
+M27,MEASURE 2.10,primary,no,Missed personal data is a direct privacy risk of the system.,,
+M28,MEASURE 2.10,primary,no,"Shows how much of what is flagged as personal data really is, which sets the cost of the privacy control.",,
+M29,MAP 2.3,supporting,no,Quality rules on the data are part of the data suitability considerations the subcategory asks to document.,,
+M30,MAP 2.3,supporting,no,NIST names tracing data lineage and its metadata as part of documenting TEVV considerations.,Playbook MAP 2.3,Identify and document processes to understand and trace test and training data lineage and its metadata resources for mapping risks.
+M30,MEASURE 2.8,supporting,no,Documented data assets support transparency about what the system was built from.,,
+M31,MAP 2.3,supporting,no,NIST names tracing test and training data lineage as part of documenting TEVV considerations.,Playbook MAP 2.3,Identify and document processes to understand and trace test and training data lineage and its metadata resources for mapping risks.
+M31,MAP 4.1,supporting,no,"Mapping the risks of components, including third-party data, needs to know where data came from.",,
+M31,MEASURE 2.8,supporting,no,"Lineage makes it possible to trace output back to data, which supports accountability.",,
+M32,MEASURE 2.9,primary,no,"Measures whether decisions can be explained, which the subcategory asks to be done and documented.",,
+M33,MEASURE 2.4,primary,no,Prediction drift is monitored in production.,,
+M33,MEASURE 3.1,primary,no,Drift is how emergent risk from changing performance in deployment is tracked over time.,,
+M33,MANAGE 3.2,supporting,no,"When the model is pre-trained by someone else, drift monitoring is part of monitoring it.",,
+M33,MEASURE 2.5,supporting,no,Drift shows where the system has moved beyond the conditions it was validated under.,,
+M34,MEASURE 2.4,primary,no,Input drift is monitored in production.,,
+M34,MEASURE 3.1,primary,no,Input drift signals emergent risk in the deployed context.,,
+M34,MEASURE 2.5,supporting,no,Input drift shows where use has moved beyond the conditions the system was developed for.,,
+M35,MEASURE 2.4,primary,no,Availability is monitored in production.,,
+M35,MANAGE 3.1,supporting,yes,"When the model is a third-party service its availability is one risk to monitor, but NIST frames the monitoring around trustworthiness characteristics, not uptime.",Playbook MANAGE 3.1,Monitor third-party AI systems for potential negative impacts and risks associated with trustworthiness characteristics.
+M35,MEASURE 2.6,supporting,no,NIST lists system down time among the safety statistics to collect.,Playbook MEASURE 2.6,"Collect pertinent safety statistics (e.g., out-of-range performance, incident response times, system down time, injuries, etc.)"
+M35,MEASURE 2.7,supporting,no,Uptime under failure is part of resilience.,,
+M36,MEASURE 2.4,primary,no,Failed requests are monitored in production.,,
+M36,MANAGE 4.3,supporting,no,Errors are among what the subcategory asks to track and communicate.,,
+M36,MEASURE 2.6,supporting,no,NIST asks to track error metrics as part of evaluating safety.,Playbook MEASURE 2.6,Track multiple performance quality and error metrics.
+M37,MEASURE 4.2,primary,no,NIST names the frequency of override decisions as a measure to evaluate and feed back into improvement.,Playbook MEASURE 4.2,"Measure frequency of AI systems’ override decisions, evaluate and document results, and feed insights back into continual improvement processes."
+M37,MANAGE 2.4,supporting,no,Overrides show the mechanism to supersede the system's output exists and is used.,,
+M37,MANAGE 4.1,supporting,no,The subcategory's monitoring plan names appeal and override; this metric tracks the latter.,,
+M37,MAP 3.5,supporting,no,How often people override the system is evidence that the human oversight process is being exercised and can be assessed.,,
+M38,MEASURE 4.2,primary,no,NIST names end user satisfaction with system performance as feedback to evaluate.,Playbook MEASURE 4.2,"Evaluate feedback regarding end user satisfaction with, and confidence in, AI system performance including whether output is considered valid and reliable, and explainable and interpretable."
+M38,MANAGE 2.2,supporting,no,Sustained satisfaction is one sign the system keeps its value.,,
+M38,MANAGE 4.1,supporting,no,The monitoring plan includes capturing input from users.,,
+M38,MEASURE 3.3,supporting,yes,NIST asks to measure participation in feedback and appeal processes; a satisfaction score is feedback but not a problem-reporting or appeal channel.,Playbook MEASURE 3.3,Measure feedback activity participation rates and awareness of feedback activity availability.
+M38,MEASURE 4.3,supporting,no,User ratings are field data about whether performance improves or declines.,,
+M39,MANAGE 1.1,primary,no,Impact on a business result is direct evidence on whether the system achieves its stated objectives.,,
+M39,MANAGE 2.2,supporting,no,Lift that persists over time is evidence of sustained value.,,
+M39,MAP 3.1,supporting,no,Measured lift tests the benefits examined and documented before deployment.,,
+M40,MEASURE 2.3,primary,no,NIST names prediction latency as an efficiency criterion of performance; time to first token is latency as a user experiences it.,Playbook MEASURE 2.3,"Measure and document performance criteria such as validity (false positive rate, false negative rate, etc.) and efficiency (training times, prediction latency, etc.) related to ground truth within the deployment context of use."
+M40,MEASURE 2.4,primary,no,Time to first token is a behavior of the system monitored in production.,,
+M41,MANAGE 1.1,supporting,no,"Low adoption is evidence the system may not achieve its purpose, though it can have other causes.",,
+M41,MANAGE 2.2,supporting,no,Continued use is one sign the system keeps its value.,,
+M42,MEASURE 2.8,primary,no,Complete decision records are what accountability is examined against.,,
+M42,MANAGE 4.3,supporting,no,Incident tracking and recovery depend on an audit record of what the system decided.,,
