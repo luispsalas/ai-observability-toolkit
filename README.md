@@ -1,8 +1,5 @@
 <p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <img src="assets/banner-light.svg" alt="AI Observability Toolkit: What to measure in AI systems, and how to improve what can't be graded" width="760">
-  </picture>
+  <img src="assets/banner.svg" alt="AI Observability Toolkit: What to measure in AI systems, and how to improve what can't be graded" width="760">
 </p>
 
 **Metrics and observability for AI systems, worked through real use cases: what to watch, how to read it, and what to do when no single score says whether the answer was right.**
