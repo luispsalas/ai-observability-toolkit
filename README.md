@@ -45,7 +45,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 
 - **It is not a compliance checklist.** The NIST crosswalk shows where metrics can supply evidence for the framework. Metrics reach 26 of its 72 subcategories, and meeting it takes policies, roles and documentation as well.
 - **The use cases are small.** Most run on a lab built for this purpose, not on a production system, and each will say so with its sample size.
-- **The metric audit is under way.** 7 of the 43 metrics have been checked against current research so far ([`data/metric-audit.csv`](data/metric-audit.csv)); the rest still carry tool lists and target ranges from August 2026, and tools in this area change quickly.
+- **The metric audit is under way.** 13 of the 43 metrics have been checked against current research so far ([`data/metric-audit.csv`](data/metric-audit.csv)); the rest still carry tool lists and target ranges from August 2026, and tools in this area change quickly.
 
 ## Why it matters
 

@@ -15,3 +15,15 @@ S13,Case-Aware LLM-as-a-Judge Evaluation for Enterprise-Scale RAG Systems,Mukul 
 S14,"Rethinking Evaluation for LLM Hallucination Detection: A Desiderata, A New RAG-based Benchmark, New Insights",Wenbo Chen et al.,2026,arXiv:2605.11330,https://arxiv.org/abs/2605.11330,preprint
 S15,The Labeling Problem in Hallucination Detection Benchmarks: An Empirical Evaluation,Jorma Valjakka et al.,2026,arXiv:2610.08026,https://arxiv.org/abs/2610.08026,preprint
 S16,A Survey on LLM-as-a-Judge,Jiawei Gu et al.,2024,arXiv:2411.15594,https://arxiv.org/abs/2411.15594,preprint
+S17,RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation,Dongyu Ru et al.,2024,arXiv:2408.08067,https://arxiv.org/abs/2408.08067,preprint
+S18,ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems,Jon Saad-Falcon et al.,2023,arXiv:2311.09476,https://arxiv.org/abs/2311.09476,preprint
+S19,BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models,Nandan Thakur et al.,2021,arXiv:2104.08663,https://arxiv.org/abs/2104.08663,preprint
+S20,Large language models can accurately predict searcher preferences,Paul Thomas et al.,2023,arXiv:2309.10621,https://arxiv.org/abs/2309.10621,preprint
+S21,UMBRELA: UMbrela is the (Open-Source Reproduction of the) Bing RELevance Assessor,Shivani Upadhyay et al.,2024,arXiv:2406.06519,https://arxiv.org/abs/2406.06519,preprint
+S22,LLM-based relevance assessment still can't replace human relevance assessment,Charles L. A. Clarke et al.,2024,arXiv:2412.17156,https://arxiv.org/abs/2412.17156,preprint
+S23,When LLM Judges Inflate Scores: Exploring Overrating in Relevance Assessment,Chuting Yu et al.,2026,arXiv:2602.17170,https://arxiv.org/abs/2602.17170,preprint
+S24,A Human-AI Comparative Analysis of Prompt Sensitivity in LLM-Based Relevance Judgment,Negar Arabzadeh et al.,2025,arXiv:2504.12408,https://arxiv.org/abs/2504.12408,preprint
+S25,LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory,Di Wu et al.,2024,arXiv:2410.10813,https://arxiv.org/abs/2410.10813,preprint
+S26,Evaluating Very Long-Term Conversational Memory of LLM Agents,Adyasha Maharana et al.,2024,arXiv:2402.17753,https://arxiv.org/abs/2402.17753,preprint
+S27,Cumulated gain-based evaluation of IR techniques,Järvelin et al.,2002,doi:10.1145/582415.582418,https://doi.org/10.1145/582415.582418,paper
+S28,trec_eval: evaluation software used in the Text Retrieval Conference (recip_rank measure),NIST (usnistgov/trec_eval),2026,github:usnistgov/trec_eval m_recip_rank.c,https://github.com/usnistgov/trec_eval,documentation

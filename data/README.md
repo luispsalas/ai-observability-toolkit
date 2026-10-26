@@ -4,9 +4,9 @@
 
 ## What this does not do (read first)
 
-- **The audit is only partly done.** The metrics came over from the [AI Metrics Catalog](https://luispsalas.github.io/ai-governance-scorecard/) (last updated August 2026). Their structure, formulas, targets and wording were reviewed in October 2026. Checking each one against current research is under way: [`metric-audit.csv`](metric-audit.csv) records the result for every metric, and 7 of the 43 are done so far (one more, M14, was merged into M07 and retired). Until a metric's row says otherwise, treat its tool names and ranges as a starting point.
+- **The audit is only partly done.** The metrics came over from the [AI Metrics Catalog](https://luispsalas.github.io/ai-governance-scorecard/) (last updated August 2026). Their structure, formulas, targets and wording were reviewed in October 2026. Checking each one against current research is under way: [`metric-audit.csv`](metric-audit.csv) records the result for every metric, and 13 of the 43 are done so far (one more, M14, was merged into M07 and retired). Until a metric's row says otherwise, treat its tool names and ranges as a starting point.
 - **Healthy targets are rules of thumb.** They suit a typical deployment and need to be set again for each system. Where no general number makes sense, the target says "Set per system" and gives the rule for setting it.
-- **20 of the 43 metrics rest on a judgment.** Their formulas count things ("supported claims ÷ total claims"), but deciding what counts is done by an AI judge or a human rater. The `measurement_method` column says which, so read those scores as judgments with their own error.
+- **22 of the 43 metrics rest on a judgment.** Their formulas count things ("supported claims ÷ total claims"), but deciding what counts is done by an AI judge or a human rater. The `measurement_method` column says which, so read those scores as judgments with their own error.
 - **The `toolkit_use_cases` column is empty for now.** It fills in as the use cases are written.
 
 ## Files
@@ -37,9 +37,9 @@ And each carries a **`measurement_method`**, how the number is actually produced
 
 | Value | Meaning | Metrics |
 |---|---|---|
-| `deterministic` | Counted or computed by fixed code from logs or data | 18 |
-| `human_rating` | Rated by people, or scored against labels people made | 17 |
-| `llm_judge` | Rated by an AI model following a rubric | 16 |
+| `deterministic` | Counted or computed by fixed code from logs or data | 17 |
+| `human_rating` | Rated by people, or scored against labels people made | 18 |
+| `llm_judge` | Rated by an AI model following a rubric | 17 |
 | `model_score` | Produced by a specialized model, such as an embedding or a toxicity classifier | 7 |
 | `statistical` | A statistical test or divergence measure | 3 |
 

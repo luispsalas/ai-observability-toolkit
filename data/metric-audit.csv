@@ -1,10 +1,10 @@
 metric_id,status,outcome,reason,sources,assessed_on
-M01,pending,,,,
-M02,pending,,,,
-M03,pending,,,,
+M01,assessed,revise,"The formula matches the chunk-level context precision used by RAGChecker, but the card claimed it reflects ranking, which it does not. Relevance labels increasingly come from LLMs: they can approach human labels (Bing, UMBRELA) but are disputed as a replacement, inflate relevance and shift with the prompt, so the card now asks for a check against human labels.",S17;S20;S21;S22;S23;S24;S18,2026-10-26
+M02,assessed,revise,"Added the claim-level method (share of a reference answer's claims found in the retrieved chunks, as in RAGChecker), which removes the card's main obstacle: a full 'all relevant' label set. Label-agreement requirement added.",S17;S22;S23,2026-10-26
+M03,assessed,revise,"RAGAS defines context relevance as the share of context sentences needed to answer, while the card used embedding similarity, a different and cheaper proxy. Both methods are now named, as for answer relevance, with a target per method.",S03;S18,2026-10-26
 M04,pending,,,,
-M05,pending,,,,
-M06,pending,,,,
+M05,assessed,revise,"Calculation made precise from the TREC evaluation tool's definition (reciprocal rank of the first relevant retrieved item), with its note that the measure suits queries with one relevant item. The Python wrapper named in the tools is idle since 2023; the TREC tool itself is maintained.",S28;S23,2026-10-26
+M06,assessed,revise,"NDCG (Järvelin and Kekäläinen) is computed at a cutoff k, which the card did not state; benchmarks such as BEIR report NDCG@10. Graded LLM labels are where overrating is strongest, so a check against human grades was added.",S27;S19;S23,2026-10-26
 M07,assessed,revise,"Definition matches RAGAS (statements extracted from the answer, each checked against the context). Added that it measures support by context rather than truth, which recent work shows labelers confuse, plus judge-agreement and standard-error requirements.",S03;S06;S07;S08;S10;S15,2026-10-26
 M08,assessed,revise,"Phase A narrowed the calculation to a rubric score, but the RAGAS definition uses generated questions and embedding similarity, ignores correctness, and was its least human-aligned metric (78% vs 95%). Both methods are now named, with a target per method.",S03;S06;S07,2026-10-26
 M09,assessed,revise,Definition sound. Judge-based scoring is only as good as its measured agreement with humans; only the strongest judge models align reasonably. Added judge-agreement and standard-error requirements.,S06;S07;S08,2026-10-26
@@ -23,7 +23,7 @@ M21,pending,,,,
 M22,pending,,,,
 M23,pending,,,,
 M24,pending,,,,
-M25,pending,,,,
+M25,assessed,revise,"Memory benchmarks (LongMemEval, LoCoMo) evaluate several distinct memory abilities and report large drops for commercial assistants over long interactions; one accuracy hides which ability fails. Scoring against labeled ground truth is a human-label method, not a deterministic one, so measurement_method was corrected.",S25;S26,2026-10-26
 M26,pending,,,,
 M27,pending,,,,
 M28,pending,,,,
