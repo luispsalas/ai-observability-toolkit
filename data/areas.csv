@@ -1,0 +1,7 @@
+order,area,known_gap,description
+1,Data & Input,no,"The data and context an AI system receives: source and training data, retrieved context, agent memory and incoming prompts. Name from the OECD Framework for the Classification of AI Systems."
+2,AI Model,no,"Properties of the model itself, independent of a single task: robustness, explainability and drift in its predictions. Name from the OECD framework."
+3,Task & Output,no,What the system does and produces: the quality and safety of its outputs and the success of the actions it takes. Name from the OECD framework.
+4,Application Context,no,"The organization and people around the system: human oversight, records of decisions, adoption, satisfaction and business results. NIST's name for this dimension; the OECD framework calls it Economic Context."
+5,People & Planet,yes,"Effects on people, society and the environment, such as the fairness of outcomes and environmental impact. No metric in the catalog covers this area yet. Name from the OECD framework."
+6,Runtime Operations,no,"The running service: latency, availability, errors and cost. Added by this toolkit, because the OECD and NIST dimensions have no runtime area."

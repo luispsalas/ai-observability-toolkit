@@ -13,17 +13,17 @@ import sys
 from pathlib import Path
 
 METRIC_COLUMNS = [
-    "id", "name", "layer", "goal", "tier", "description", "calculation", "example",
-    "applications", "when_to_implement", "healthy_target", "pitfalls", "tools",
-    "prerequisites", "toolkit_use_cases",
+    "id", "name", "area", "goal", "tier", "characteristic", "measurement_method", "description",
+    "calculation", "example", "applications", "when_to_implement", "healthy_target", "pitfalls",
+    "tools", "prerequisites", "toolkit_use_cases",
 ]
-LAYER_COLUMNS = ["order", "layer", "description"]
+AREA_COLUMNS = ["order", "area", "known_gap", "description"]
 OPTIONAL = {"toolkit_use_cases"}  # filled in as use cases are written
 
 # How many rows the checks expect to see. A check that inspects fewer rows than
 # this fails loudly instead of passing quietly on an empty or truncated file.
 EXPECTED_METRICS = 42
-EXPECTED_LAYERS = 11
+EXPECTED_AREAS = 6
 EXPECTED_NIST = (19, 72)  # AI RMF 1.0 categories, subcategories
 
 NIST_COLUMNS = ["function", "category_id", "category", "subcategory_id", "subcategory"]
@@ -31,6 +31,19 @@ CROSSWALK_COLUMNS = ["metric_id", "subcategory_id", "relation", "uncertain", "ra
 
 GOALS = {"Technical Quality", "Governance & Risk", "Business Value"}
 TIERS = {"Foundational", "Intermediate", "Advanced"}
+# NIST AI RMF 1.0 trustworthiness characteristics (§3), plus environmental impact
+# (MEASURE 2.12); "none" when a metric gives evidence for none of them.
+CHARACTERISTICS = {
+    "valid_reliable", "safe", "secure_resilient", "accountable_transparent",
+    "explainable_interpretable", "privacy_enhanced", "fair", "environmental", "none",
+}
+# Which crosswalk subcategory stands for which characteristic.
+CHARACTERISTIC_OF = {
+    "MEASURE 2.5": "valid_reliable", "MEASURE 2.6": "safe", "MEASURE 2.7": "secure_resilient",
+    "MEASURE 2.8": "accountable_transparent", "MEASURE 2.9": "explainable_interpretable",
+    "MEASURE 2.10": "privacy_enhanced", "MEASURE 2.11": "fair", "MEASURE 2.12": "environmental",
+}
+MEASUREMENT_METHODS = {"deterministic", "model_score", "llm_judge", "human_rating", "statistical"}
 TOOLKIT_USE_CASES = {
     "privacy-gate", "ai-search", "prompt-evaluation",
     "retrieval-pipeline", "runtime-monitoring", "agent-observability",
@@ -44,13 +57,13 @@ def read(path):
         return header, [dict(zip(header, row)) | {"_len": len(row)} for row in reader]
 
 
-# Each rule takes (metric header, metric rows, layer header, layer rows) and yields messages.
+# Each rule takes the loaded tables (metrics, areas, NIST, crosswalk) and yields messages.
 def r01_headers(d):
     mh, m, lh, l = d["mh"], d["m"], d["lh"], d["l"]
     if mh != METRIC_COLUMNS:
         yield f"metrics.csv header is {mh}, expected {METRIC_COLUMNS}"
-    if lh != LAYER_COLUMNS:
-        yield f"layers.csv header is {lh}, expected {LAYER_COLUMNS}"
+    if lh != AREA_COLUMNS:
+        yield f"areas.csv header is {lh}, expected {AREA_COLUMNS}"
     if d["nh"] != NIST_COLUMNS:
         yield f"nist-ai-rmf.csv header is {d['nh']}, expected {NIST_COLUMNS}"
     if d["xh"] != CROSSWALK_COLUMNS:
@@ -61,8 +74,8 @@ def r02_row_counts(d):
     mh, m, lh, l = d["mh"], d["m"], d["lh"], d["l"]
     if len(m) != EXPECTED_METRICS:
         yield f"metrics.csv has {len(m)} rows, expected {EXPECTED_METRICS} (update EXPECTED_METRICS when adding metrics)"
-    if len(l) != EXPECTED_LAYERS:
-        yield f"layers.csv has {len(l)} rows, expected {EXPECTED_LAYERS}"
+    if len(l) != EXPECTED_AREAS:
+        yield f"areas.csv has {len(l)} rows, expected {EXPECTED_AREAS}"
 
 
 def r03_row_width(d):
@@ -102,12 +115,12 @@ def r06_required_fields(d):
                 yield f"{row.get('id', '?')}: {col} is blank"
 
 
-def r07_layer_known(d):
+def r07_area_known(d):
     mh, m, lh, l = d["mh"], d["m"], d["lh"], d["l"]
-    layers = {x.get("layer") for x in l}
+    areas = {x.get("area") for x in l}
     for row in m:
-        if row.get("layer") and row["layer"] not in layers:
-            yield f"{row['id']}: layer {row['layer']!r} is not in layers.csv"
+        if row.get("area") and row["area"] not in areas:
+            yield f"{row['id']}: area {row['area']!r} is not in areas.csv"
 
 
 def r08_goal_and_tier(d):
@@ -119,12 +132,19 @@ def r08_goal_and_tier(d):
             yield f"{row['id']}: tier {row['tier']!r} is not one of {sorted(TIERS)}"
 
 
-def r09_every_layer_used(d):
+def r09_areas_used_or_known_gaps(d):
+    """An area is empty exactly when it is marked as a known gap, so a metric moved
+    out by mistake, or a gap that has since been filled, is reported."""
     mh, m, lh, l = d["mh"], d["m"], d["lh"], d["l"]
-    used = {row.get("layer") for row in m}
+    used = {row.get("area") for row in m}
     for x in l:
-        if x.get("layer") not in used:
-            yield f"layer {x.get('layer')!r} has no metrics"
+        gap = x.get("known_gap")
+        if gap not in ("yes", "no"):
+            yield f"area {x.get('area')!r}: known_gap {gap!r} is not yes or no"
+        elif gap == "no" and x.get("area") not in used:
+            yield f"area {x.get('area')!r} has no metrics but is not marked as a known gap"
+        elif gap == "yes" and x.get("area") in used:
+            yield f"area {x.get('area')!r} is marked as a known gap but has metrics"
 
 
 def r10_toolkit_use_cases(d):
@@ -136,7 +156,7 @@ def r10_toolkit_use_cases(d):
 
 
 def r11_clean_whitespace(d):
-    for name, rows in (("metrics.csv", d["m"]), ("layers.csv", d["l"]), ("nist-ai-rmf.csv", d["n"]), ("nist-ai-rmf-crosswalk.csv", d["x"])):
+    for name, rows in (("metrics.csv", d["m"]), ("areas.csv", d["l"]), ("nist-ai-rmf.csv", d["n"]), ("nist-ai-rmf-crosswalk.csv", d["x"])):
         for i, row in enumerate(rows, 2):
             for col, val in row.items():
                 if col != "_len" and isinstance(val, str) and (val != val.strip() or "\n" in val or "​" in val):
@@ -217,11 +237,42 @@ def r17_quotes_verbatim(d):
         yield "no quoted basis was checked: the crosswalk should have some"
 
 
+def _parts(value):
+    return [p.strip() for p in value.split(";") if p.strip()]
+
+
+def r18_characteristics(d):
+    for row in d["m"]:
+        parts = _parts(row.get("characteristic", ""))
+        for p in parts:
+            if p not in CHARACTERISTICS:
+                yield f"{row.get('id')}: characteristic {p!r} is not one of {sorted(CHARACTERISTICS)}"
+        if "none" in parts and len(parts) > 1:
+            yield f"{row.get('id')}: characteristic 'none' cannot be combined with others"
+
+
+def r19_measurement_methods(d):
+    for row in d["m"]:
+        for p in _parts(row.get("measurement_method", "")):
+            if p not in MEASUREMENT_METHODS:
+                yield f"{row.get('id')}: measurement_method {p!r} is not one of {sorted(MEASUREMENT_METHODS)}"
+
+
+def r20_characteristic_matches_crosswalk(d):
+    """A primary crosswalk link to a characteristic's MEASURE subcategory means the
+    metric must carry that characteristic."""
+    tags = {row.get("id"): set(_parts(row.get("characteristic", ""))) for row in d["m"]}
+    for i, r in enumerate(d["x"], 2):
+        want = CHARACTERISTIC_OF.get(r.get("subcategory_id"))
+        if want and r.get("relation") == "primary" and want not in tags.get(r.get("metric_id"), {want}):
+            yield f"crosswalk line {i}: {r.get('metric_id')} is primary evidence for {r.get('subcategory_id')} but its characteristic does not include {want}"
+
+
 RULES = {f.__name__.split("_")[0]: f for f in (
     r01_headers, r02_row_counts, r03_row_width, r04_ids, r05_unique_names, r06_required_fields,
-    r07_layer_known, r08_goal_and_tier, r09_every_layer_used, r10_toolkit_use_cases, r11_clean_whitespace,
+    r07_area_known, r08_goal_and_tier, r09_areas_used_or_known_gaps, r10_toolkit_use_cases, r11_clean_whitespace,
     r12_nist_table, r13_crosswalk_references, r14_crosswalk_values, r15_crosswalk_duplicates, r16_every_metric_mapped,
-    r17_quotes_verbatim,
+    r17_quotes_verbatim, r18_characteristics, r19_measurement_methods, r20_characteristic_matches_crosswalk,
 )}
 
 
@@ -230,7 +281,7 @@ def check(root, disabled=()):
     root = Path(root)
     d = {}
     d["mh"], d["m"] = read(root / "data/metrics.csv")
-    d["lh"], d["l"] = read(root / "data/layers.csv")
+    d["lh"], d["l"] = read(root / "data/areas.csv")
     d["nh"], d["n"] = read(root / "data/nist-ai-rmf.csv")
     d["xh"], d["x"] = read(root / "crosswalk/nist-ai-rmf-crosswalk.csv")
     with open(root / "sources/NIST-AI-RMF-Playbook.json", encoding="utf-8") as f:

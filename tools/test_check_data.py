@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import check_data  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ["data/metrics.csv", "data/layers.csv", "data/nist-ai-rmf.csv", "crosswalk/nist-ai-rmf-crosswalk.csv",
+FILES = ["data/metrics.csv", "data/areas.csv", "data/nist-ai-rmf.csv", "crosswalk/nist-ai-rmf-crosswalk.csv",
          "sources/NIST-AI-RMF-Playbook.json", "sources/NIST.AI.100-1.txt"]
 
 
@@ -37,7 +37,7 @@ def set_cell(name, row, col, value):
 
 # Rule id -> (what is planted, how). Row 1 is the first data row.
 FAULTS = {
-    "r01": ("a renamed column", edit_rows("metrics.csv", lambda r: r[0].__setitem__(14, "use_cases"))),
+    "r01": ("a renamed column", edit_rows("metrics.csv", lambda r: r[0].__setitem__(r[0].index("toolkit_use_cases"), "use_cases"))),
     "r02": ("a metric deleted along with its links", lambda d: (edit_rows("metrics.csv", lambda r: r.pop())(d),
              edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M42"]])(d))),
     "r03": ("a row with an extra field", edit_rows("metrics.csv", lambda r: r[5].append("stray"))),
@@ -45,9 +45,9 @@ FAULTS = {
              edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [x.__setitem__(0, "M01") for x in r if x[0] == "M13"])(d))),
     "r05": ("a duplicated name", set_cell("metrics.csv", 3, "name", "context precision")),
     "r06": ("a blank required field", set_cell("metrics.csv", 4, "pitfalls", "")),
-    "r07": ("a layer that does not exist", set_cell("metrics.csv", 5, "layer", "Retrieval")),
+    "r07": ("an area that does not exist", set_cell("metrics.csv", 5, "area", "Retrieval")),
     "r08": ("a tier outside the scale", set_cell("metrics.csv", 6, "tier", "Expert")),
-    "r09": ("a layer left with no metrics", edit_rows("metrics.csv", lambda r: [row.__setitem__(2, "Operations") for row in r[1:] if row[2] == "Cost & FinOps"])),
+    "r09": ("an area left with no metrics", edit_rows("metrics.csv", lambda r: [row.__setitem__(2, "AI Model") for row in r[1:] if row[2] == "Runtime Operations"])),
     "r10": ("an unknown use-case tag", set_cell("metrics.csv", 7, "toolkit_use_cases", "privacy-gate;search")),
     "r11": ("a line break inside a field", set_cell("metrics.csv", 8, "example", "two\nlines")),
     "r12": ("an unlinked subcategory deleted", edit_rows("nist-ai-rmf.csv", lambda r: r.pop(1))),
@@ -56,6 +56,9 @@ FAULTS = {
     "r15": ("a link entered twice", edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: r.insert(6, list(r[5])))),
     "r17": ("one word changed inside a NIST quote", edit_rows("nist-ai-rmf-crosswalk.csv",
              lambda r: [x.__setitem__(6, x[6].replace("frequency", "rate")) for x in r if x[0] == "M37" and x[1] == "MEASURE 4.2"])),
+    "r18": ("a characteristic outside the list", set_cell("metrics.csv", 18, "characteristic", "trustworthy")),
+    "r19": ("a measurement method outside the list", set_cell("metrics.csv", 19, "measurement_method", "vibes")),
+    "r20": ("a characteristic that contradicts the crosswalk", set_cell("metrics.csv", 15, "characteristic", "valid_reliable")),
     "r16": ("a metric's only link deleted", edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M11"]])),
 }
 

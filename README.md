@@ -57,7 +57,7 @@ Traditional data quality and software testing assume that the same input gives t
 python3 tools/test_check_data.py
 ```
 
-This proves the checker works: each of its 17 rules must catch a planted error, and miss it when switched off. It should end with `ALL PASSED`. Then check the data and the crosswalk:
+This proves the checker works: each of its 20 rules must catch a planted error, and miss it when switched off. It should end with `ALL PASSED`. Then check the data and the crosswalk:
 
 ```bash
 python3 tools/check_data.py
@@ -68,10 +68,10 @@ Python 3, standard library only. The data is plain CSV, so it opens in any sprea
 ## Repository map
 
 ```
-data/       metrics.csv (42 metrics), layers.csv (11 layers), nist-ai-rmf.csv (72 subcategories)
+data/       metrics.csv (42 metrics), areas.csv (6 areas), nist-ai-rmf.csv (72 subcategories)
 crosswalk/  the NIST AI RMF crosswalk: one CSV of links and a README with findings
 sources/    the NIST AI RMF 1.0 and its Playbook, with citations and how their text was checked
-tools/      check_data.py (17 rules) and its tests, the NIST extractor, the summary generator
+tools/      check_data.py (20 rules) and its tests, the NIST extractor, the summary generator
 assets/     the banner
 ```
 
