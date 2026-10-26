@@ -8,6 +8,7 @@ M05,MEASURE 2.3,primary,no,Measures ranking performance on a test set built to r
 M06,MEASURE 2.3,primary,no,Measures ranking performance on a test set built to resemble deployment queries.,,
 M07,MEASURE 2.5,primary,no,Whether answers are grounded in their sources is direct evidence that output is valid.,,
 M07,MEASURE 2.3,supporting,no,Usually reported as one of the performance measures for a generative system.,,
+M07,MEASURE 2.4,supporting,no,"Becomes production monitoring when sampled from live traffic (moved here from M14, which merged into this metric).",,
 M08,MEASURE 2.3,primary,no,"Measures whether answers address the user's need, a core performance criterion.",,
 M09,MEASURE 2.3,primary,no,"Measures agreement with ground truth, the most direct performance criterion.",,
 M09,MEASURE 2.5,supporting,no,"Correctness on a reference set supports the claim that the system is valid, within that set's coverage.",,
@@ -17,9 +18,6 @@ M11,MEASURE 2.3,primary,no,"Measures closeness to reference answers, a quantitat
 M12,MEASURE 2.3,primary,no,Measures how often prompts produce acceptable output on a test set.,,
 M12,MEASURE 2.5,supporting,no,"Tracked across prompt versions, it shows whether output stays reliable.",,
 M13,MEASURE 2.7,primary,no,Detecting malicious prompts is a direct security evaluation of the system.,,
-M14,MEASURE 2.5,primary,no,Unsupported statements are invalid output; their rate is direct evidence against validity.,,
-M14,MEASURE 2.3,supporting,no,Usually reported among the performance measures for a generative system.,,
-M14,MEASURE 2.4,supporting,no,Becomes production monitoring when sampled from live traffic.,,
 M15,MEASURE 2.6,primary,yes,"Read broadly, harmful content is a safety risk; the framework defines safety as endangering life, health, property or the environment, so the fit is settled when the Generative AI Profile is mapped.",AI RMF 1.0 §3.2,"not under defined conditions, lead to a state in which human life, health, property, or the environment is endangered"
 M16,MEASURE 2.6,primary,yes,"Policy breaches are safety failures only where the policy protects life, health, property or the environment; settled when the Generative AI Profile is mapped.",AI RMF 1.0 §3.2,"not under defined conditions, lead to a state in which human life, health, property, or the environment is endangered"
 M16,MANAGE 4.3,supporting,no,Each violation is an error to track and communicate under incident processes.,,
@@ -81,3 +79,7 @@ M41,MANAGE 1.1,supporting,no,"Low adoption is evidence the system may not achiev
 M41,MANAGE 2.2,supporting,no,Continued use is one sign the system keeps its value.,,
 M42,MEASURE 2.8,primary,no,Complete decision records are what accountability is examined against.,,
 M42,MANAGE 4.3,supporting,no,Incident tracking and recovery depend on an audit record of what the system decided.,,
+M43,MEASURE 2.5,primary,no,"Checks that every statement is supported by the sources it cites, which is a validity check on the output.",,
+M43,MEASURE 2.8,supporting,no,"Complete citations let a reader trace each claim to its source, which supports transparency.",,
+M44,MEASURE 2.5,primary,no,"The framework counts accuracy, closeness to values accepted as true, as part of validity; facts checked against a reliable source are that closeness.",AI RMF 1.0 §3.1,"closeness of results of observations, computations, or estimates to the true values or the values accepted as being true"
+M44,MEASURE 2.4,supporting,no,Becomes production monitoring when sampled from live traffic.,,

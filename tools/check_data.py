@@ -22,7 +22,7 @@ OPTIONAL = {"toolkit_use_cases"}  # filled in as use cases are written
 
 # How many rows the checks expect to see. A check that inspects fewer rows than
 # this fails loudly instead of passing quietly on an empty or truncated file.
-EXPECTED_METRICS = 42
+EXPECTED_METRICS = 43
 EXPECTED_AREAS = 6
 EXPECTED_NIST = (19, 72)  # AI RMF 1.0 categories, subcategories
 
@@ -44,6 +44,12 @@ CHARACTERISTIC_OF = {
     "MEASURE 2.10": "privacy_enhanced", "MEASURE 2.11": "fair", "MEASURE 2.12": "environmental",
 }
 MEASUREMENT_METHODS = {"deterministic", "model_score", "llm_judge", "human_rating", "statistical"}
+
+AUDIT_COLUMNS = ["metric_id", "status", "outcome", "reason", "sources", "assessed_on"]
+AUDIT_STATUSES = {"pending", "proposed", "assessed"}  # proposed = a split, merge or retirement awaiting a decision
+AUDIT_OUTCOMES = {"keep", "revise", "split", "merge", "retire"}
+SOURCE_COLUMNS = ["id", "title", "authors", "year", "identifier", "url", "kind"]
+SOURCE_KINDS = {"standard", "preprint", "paper", "regulation", "documentation", "report"}
 TOOLKIT_USE_CASES = {
     "privacy-gate", "ai-search", "prompt-evaluation",
     "retrieval-pipeline", "runtime-monitoring", "agent-observability",
@@ -156,7 +162,8 @@ def r10_toolkit_use_cases(d):
 
 
 def r11_clean_whitespace(d):
-    for name, rows in (("metrics.csv", d["m"]), ("areas.csv", d["l"]), ("nist-ai-rmf.csv", d["n"]), ("nist-ai-rmf-crosswalk.csv", d["x"])):
+    for name, rows in (("metrics.csv", d["m"]), ("areas.csv", d["l"]), ("nist-ai-rmf.csv", d["n"]), ("nist-ai-rmf-crosswalk.csv", d["x"]),
+                       ("metric-audit.csv", d["a"]), ("sources.csv", d["s"])):
         for i, row in enumerate(rows, 2):
             for col, val in row.items():
                 if col != "_len" and isinstance(val, str) and (val != val.strip() or "\n" in val or "​" in val):
@@ -268,11 +275,74 @@ def r20_characteristic_matches_crosswalk(d):
             yield f"crosswalk line {i}: {r.get('metric_id')} is primary evidence for {r.get('subcategory_id')} but its characteristic does not include {want}"
 
 
+def r21_metric_audit(d):
+    """One audit row per metric; a decided or proposed row has an outcome, a reason,
+    sources that exist in sources.csv, and a date."""
+    if d["ah"] != AUDIT_COLUMNS:
+        yield f"metric-audit.csv header is {d['ah']}, expected {AUDIT_COLUMNS}"
+        return
+    ids = [r.get("metric_id") for r in d["a"]]
+    known = {r.get("id") for r in d["s"]}
+    for m in d["m"]:
+        n = ids.count(m.get("id"))
+        if n != 1:
+            yield f"{m.get('id')} has {n} rows in metric-audit.csv, expected 1"
+    # A metric merged or retired leaves metrics.csv but keeps its audit row, so its id is never reused.
+    active = {m.get("id") for m in d["m"]}
+    for r in d["a"]:
+        gone = r.get("outcome") in ("merge", "retire")
+        if r.get("metric_id") not in active and not gone:
+            yield f"metric-audit: {r.get('metric_id')} is not in metrics.csv and is not recorded as merged or retired"
+        if r.get("metric_id") in active and gone:
+            yield f"metric-audit: {r.get('metric_id')} is recorded as {r.get('outcome')}d but is still in metrics.csv (a retired id is never reused)"
+    for mid in {x for x in ids if ids.count(x) > 1}:
+        yield f"metric-audit: {mid} has more than one row"
+    for i, r in enumerate(d["a"], 2):
+        st, out = r.get("status"), r.get("outcome", "")
+        if st not in AUDIT_STATUSES:
+            yield f"metric-audit line {i}: status {st!r} is not one of {sorted(AUDIT_STATUSES)}"
+        elif st == "pending":
+            if out or r.get("reason") or r.get("sources") or r.get("assessed_on"):
+                yield f"metric-audit line {i}: a pending row must be blank apart from its id and status"
+        else:
+            if out not in AUDIT_OUTCOMES:
+                yield f"metric-audit line {i}: outcome {out!r} is not one of {sorted(AUDIT_OUTCOMES)}"
+            if not r.get("reason", "").strip():
+                yield f"metric-audit line {i}: a {st} row needs a reason"
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", r.get("assessed_on", "")):
+                yield f"metric-audit line {i}: assessed_on {r.get('assessed_on')!r} is not a date"
+            srcs = _parts(r.get("sources", ""))
+            if not srcs:
+                yield f"metric-audit line {i}: a {st} row needs at least one source"
+            for s in srcs:
+                if s not in known:
+                    yield f"metric-audit line {i}: source {s!r} is not in sources/sources.csv"
+
+
+def r22_sources_registry(d):
+    if d["sh"] != SOURCE_COLUMNS:
+        yield f"sources.csv header is {d['sh']}, expected {SOURCE_COLUMNS}"
+        return
+    seen = set()
+    for i, r in enumerate(d["s"], 2):
+        sid = r.get("id", "")
+        if not re.fullmatch(r"S\d{2,}", sid):
+            yield f"sources.csv line {i}: id {sid!r} is not of the form S01"
+        elif sid in seen:
+            yield f"sources.csv line {i}: id {sid} is used twice (an id names one source forever)"
+        seen.add(sid)
+        if not r.get("url", "").startswith("https://"):
+            yield f"sources.csv line {i}: url {r.get('url')!r} is not an https link"
+        if r.get("kind") not in SOURCE_KINDS:
+            yield f"sources.csv line {i}: kind {r.get('kind')!r} is not one of {sorted(SOURCE_KINDS)}"
+
+
 RULES = {f.__name__.split("_")[0]: f for f in (
     r01_headers, r02_row_counts, r03_row_width, r04_ids, r05_unique_names, r06_required_fields,
     r07_area_known, r08_goal_and_tier, r09_areas_used_or_known_gaps, r10_toolkit_use_cases, r11_clean_whitespace,
     r12_nist_table, r13_crosswalk_references, r14_crosswalk_values, r15_crosswalk_duplicates, r16_every_metric_mapped,
     r17_quotes_verbatim, r18_characteristics, r19_measurement_methods, r20_characteristic_matches_crosswalk,
+    r21_metric_audit, r22_sources_registry,
 )}
 
 
@@ -284,6 +354,8 @@ def check(root, disabled=()):
     d["lh"], d["l"] = read(root / "data/areas.csv")
     d["nh"], d["n"] = read(root / "data/nist-ai-rmf.csv")
     d["xh"], d["x"] = read(root / "crosswalk/nist-ai-rmf-crosswalk.csv")
+    d["ah"], d["a"] = read(root / "data/metric-audit.csv")
+    d["sh"], d["s"] = read(root / "sources/sources.csv")
     with open(root / "sources/NIST-AI-RMF-Playbook.json", encoding="utf-8") as f:
         d["playbook"] = {x["title"].strip(): x for x in json.load(f)}
     # Words split across lines in the PDF text are rejoined before matching.

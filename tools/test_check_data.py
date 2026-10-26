@@ -15,7 +15,8 @@ import check_data  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ["data/metrics.csv", "data/areas.csv", "data/nist-ai-rmf.csv", "crosswalk/nist-ai-rmf-crosswalk.csv",
-         "sources/NIST-AI-RMF-Playbook.json", "sources/NIST.AI.100-1.txt"]
+         "sources/NIST-AI-RMF-Playbook.json", "sources/NIST.AI.100-1.txt",
+         "data/metric-audit.csv", "sources/sources.csv"]
 
 
 def edit_rows(name, change):
@@ -35,14 +36,22 @@ def set_cell(name, row, col, value):
     return edit_rows(name, change)
 
 
+# The id of the last metric in the file, so a fixture deletes a row by identity, not by position.
+with open(ROOT / "data/metrics.csv", newline="", encoding="utf-8") as _f:
+    LAST = list(csv.reader(_f))[-1][0]
+
 # Rule id -> (what is planted, how). Row 1 is the first data row.
 FAULTS = {
     "r01": ("a renamed column", edit_rows("metrics.csv", lambda r: r[0].__setitem__(r[0].index("toolkit_use_cases"), "use_cases"))),
-    "r02": ("a metric deleted along with its links", lambda d: (edit_rows("metrics.csv", lambda r: r.pop())(d),
-             edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M42"]])(d))),
+    "r02": ("a metric deleted along with its links and audit row", lambda d: (
+             edit_rows("metrics.csv", lambda r: r.pop())(d),
+             edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == LAST]])(d),
+             edit_rows("metric-audit.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == LAST]])(d))),
     "r03": ("a row with an extra field", edit_rows("metrics.csv", lambda r: r[5].append("stray"))),
-    "r04": ("a duplicated id, with its links renamed to match", lambda d: (set_cell("metrics.csv", 13, "id", "M01")(d),
-             edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [x.__setitem__(0, "M01") for x in r if x[0] == "M13"])(d))),
+    "r04": ("a duplicated id, with its links renamed and its audit row removed", lambda d: (
+             edit_rows("metrics.csv", lambda r: [x.__setitem__(0, "M01") for x in r if x[0] == "M13"])(d),
+             edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [x.__setitem__(0, "M01") for x in r if x[0] == "M13"])(d),
+             edit_rows("metric-audit.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M13"]])(d))),
     "r05": ("a duplicated name", set_cell("metrics.csv", 3, "name", "context precision")),
     "r06": ("a blank required field", set_cell("metrics.csv", 4, "pitfalls", "")),
     "r07": ("an area that does not exist", set_cell("metrics.csv", 5, "area", "Retrieval")),
@@ -59,6 +68,8 @@ FAULTS = {
     "r18": ("a characteristic outside the list", set_cell("metrics.csv", 18, "characteristic", "trustworthy")),
     "r19": ("a measurement method outside the list", set_cell("metrics.csv", 19, "measurement_method", "vibes")),
     "r20": ("a characteristic that contradicts the crosswalk", set_cell("metrics.csv", 15, "characteristic", "valid_reliable")),
+    "r21": ("an assessed row citing a source that is not registered", set_cell("metric-audit.csv", 7, "sources", "S03;S99")),
+    "r22": ("a source registered twice under one id", set_cell("sources.csv", 16, "id", "S15")),
     "r16": ("a metric's only link deleted", edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M11"]])),
 }
 

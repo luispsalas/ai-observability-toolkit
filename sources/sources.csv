@@ -1,0 +1,17 @@
+id,title,authors,year,identifier,url,kind
+S01,Artificial Intelligence Risk Management Framework (AI RMF 1.0),Elham Tabassi (NIST),2023,doi:10.6028/NIST.AI.100-1,https://doi.org/10.6028/NIST.AI.100-1,standard
+S02,NIST AI RMF Playbook,National Institute of Standards and Technology,2023,airc.nist.gov playbook,https://airc.nist.gov/airmf-resources/playbook/,standard
+S03,Ragas: Automated Evaluation of Retrieval Augmented Generation,Shahul Es et al.,2023,arXiv:2309.15217,https://arxiv.org/abs/2309.15217,preprint
+S04,Enabling Large Language Models to Generate Text with Citations,Tianyu Gao et al.,2023,arXiv:2305.14627,https://arxiv.org/abs/2305.14627,preprint
+S05,FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation,Sewon Min et al.,2023,arXiv:2305.14251,https://arxiv.org/abs/2305.14251,preprint
+S06,Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena,Lianmin Zheng et al.,2023,arXiv:2306.05685,https://arxiv.org/abs/2306.05685,preprint
+S07,Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges,Aman Singh Thakur et al.,2024,"arXiv:2406.12624 (v6, 2025)",https://arxiv.org/abs/2406.12624,preprint
+S08,Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations,Evan Miller,2024,arXiv:2411.00640,https://arxiv.org/abs/2411.00640,preprint
+S09,BERTScore: Evaluating Text Generation with BERT,Tianyi Zhang et al.,2019,arXiv:1904.09675,https://arxiv.org/abs/1904.09675,preprint
+S10,Benchmarking LLM Faithfulness in RAG with Evolving Leaderboards,Manveer Singh Tamber et al.,2025,arXiv:2505.04847,https://arxiv.org/abs/2505.04847,preprint
+S11,CiteEval: Principle-Driven Citation Evaluation for Source Attribution,Yumo Xu et al.,2025,arXiv:2506.01829,https://arxiv.org/abs/2506.01829,preprint
+S12,CiteGuard: Faithful Citation Attribution for LLMs via Retrieval-Augmented Validation,Yee Man Choi et al.,2025,arXiv:2510.17853,https://arxiv.org/abs/2510.17853,preprint
+S13,Case-Aware LLM-as-a-Judge Evaluation for Enterprise-Scale RAG Systems,Mukul Chhabra et al.,2026,arXiv:2602.20379,https://arxiv.org/abs/2602.20379,preprint
+S14,"Rethinking Evaluation for LLM Hallucination Detection: A Desiderata, A New RAG-based Benchmark, New Insights",Wenbo Chen et al.,2026,arXiv:2605.11330,https://arxiv.org/abs/2605.11330,preprint
+S15,The Labeling Problem in Hallucination Detection Benchmarks: An Empirical Evaluation,Jorma Valjakka et al.,2026,arXiv:2610.08026,https://arxiv.org/abs/2610.08026,preprint
+S16,A Survey on LLM-as-a-Judge,Jiawei Gu et al.,2024,arXiv:2411.15594,https://arxiv.org/abs/2411.15594,preprint

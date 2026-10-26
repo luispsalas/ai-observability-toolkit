@@ -1,0 +1,45 @@
+metric_id,status,outcome,reason,sources,assessed_on
+M01,pending,,,,
+M02,pending,,,,
+M03,pending,,,,
+M04,pending,,,,
+M05,pending,,,,
+M06,pending,,,,
+M07,assessed,revise,"Definition matches RAGAS (statements extracted from the answer, each checked against the context). Added that it measures support by context rather than truth, which recent work shows labelers confuse, plus judge-agreement and standard-error requirements.",S03;S06;S07;S08;S10;S15,2026-10-26
+M08,assessed,revise,"Phase A narrowed the calculation to a rubric score, but the RAGAS definition uses generated questions and embedding similarity, ignores correctness, and was its least human-aligned metric (78% vs 95%). Both methods are now named, with a target per method.",S03;S06;S07,2026-10-26
+M09,assessed,revise,Definition sound. Judge-based scoring is only as good as its measured agreement with humans; only the strongest judge models align reasonably. Added judge-agreement and standard-error requirements.,S06;S07;S08,2026-10-26
+M10,assessed,split,"Accepted by the user 2026-10-26. The formula measures only citation precision, so the metric is renamed Citation Precision and citation recall is added as M43, following the ALCE paper's two citation measures (recall prioritized). Recent work also doubts binary support checks and judges alone for citations.",S04;S11;S12,2026-10-26
+M11,assessed,revise,"Valid as a cheap reference-similarity check, but similarity is not correctness and depends on the embedding model. Added that pitfall. The BERTScore library has not been updated since July 2024 (checked on GitHub).",S09,2026-10-26
+M12,pending,,,,
+M13,pending,,,,
+M14,assessed,merge,"Accepted by the user 2026-10-26. As defined it was the complement of M07 Faithfulness (same claims, same context), so it is retired into M07; its id is not reused. Factual precision against a knowledge source, which the literature distinguishes from faithfulness, is added as M44.",S03;S05;S14;S15,2026-10-26
+M15,pending,,,,
+M16,pending,,,,
+M17,pending,,,,
+M18,pending,,,,
+M19,pending,,,,
+M20,pending,,,,
+M21,pending,,,,
+M22,pending,,,,
+M23,pending,,,,
+M24,pending,,,,
+M25,pending,,,,
+M26,pending,,,,
+M27,pending,,,,
+M28,pending,,,,
+M29,pending,,,,
+M30,pending,,,,
+M31,pending,,,,
+M32,pending,,,,
+M33,pending,,,,
+M34,pending,,,,
+M35,pending,,,,
+M36,pending,,,,
+M37,pending,,,,
+M38,pending,,,,
+M39,pending,,,,
+M40,pending,,,,
+M41,pending,,,,
+M42,pending,,,,
+M43,assessed,keep,"Added 2026-10-26 by the split of M10, defined as citation recall in the ALCE paper.",S04;S11,2026-10-26
+M44,assessed,keep,"Added 2026-10-26 to replace the intent of M14: factual precision against a reliable knowledge source, as defined by FActScore, distinct from faithfulness to the given context.",S05;S15,2026-10-26

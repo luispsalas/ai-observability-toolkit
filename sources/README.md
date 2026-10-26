@@ -2,6 +2,10 @@
 
 Primary documents this toolkit quotes or maps against, kept here so every claim can be checked against the exact version it was built from.
 
+## Registry
+
+[`sources.csv`](sources.csv) lists every source the toolkit cites, each with a permanent id (`S01`, `S02`, …), title, authors, year, identifier and link. The metric audit ([`../data/metric-audit.csv`](../data/metric-audit.csv)) cites sources by these ids. Each entry was checked against the arXiv record or the publisher's page when it was added, not written from memory. Research papers are cited, not copied: only the two NIST documents below, which NIST allows to be reprinted, are kept here in full. Most entries are arXiv preprints, which are not peer-reviewed; `kind` says which.
+
 ## NIST AI 100-1: AI Risk Management Framework (AI RMF 1.0)
 
 | | |
