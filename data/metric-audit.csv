@@ -24,15 +24,15 @@ M22,pending,,,,
 M23,pending,,,,
 M24,pending,,,,
 M25,assessed,revise,"Memory benchmarks (LongMemEval, LoCoMo) evaluate several distinct memory abilities and report large drops for commercial assistants over long interactions; one accuracy hides which ability fails. Scoring against labeled ground truth is a human-label method, not a deterministic one, so measurement_method was corrected.",S25;S26,2026-10-26
-M26,pending,,,,
-M27,pending,,,,
-M28,pending,,,,
-M29,pending,,,,
-M30,pending,,,,
-M31,pending,,,,
+M26,assessed,revise,"Accuracy on its own hides the costly error (sensitive data labeled as less sensitive) under class imbalance; scikit-learn documents balanced accuracy and per-class scores for this. NIST SP 800-122 says the same PII can take different impact levels by context of use, so ground truth must be labeled for the context.",S38;S32,2026-10-27
+M27,assessed,revise,"The formula did not say when a detection counts as a hit; the Presidio evaluator matches spans by character overlap (default threshold 0.9) and reports per entity type. Presidio has moved to the data-privacy-stack GitHub organization. NIST SP 800-122 and NISTIR 8053 show that identifiers outside a fixed list, and fields in combination, can still identify people, so recall over the label set is not full coverage. The ≥ 0.98 target is consistent with the 99.2% removal rate NISTIR 8053 reports for one clinical system.",S36;S32;S33,2026-10-27
+M28,assessed,revise,"Matching rule tied to M27 so the two are computed on the same basis. The Presidio evaluator combines them with F2 by default, a recall-weighted choice that matches the card's advice to favor recall.",S36,2026-10-27
+M29,assessed,revise,"The card holds up; tools are maintained (Great Expectations now sits under Fivetran's GitHub organization, with the same name). Added the pitfall that coverage counts rules, not the dimensions they test. OpenLineage can carry data-test results per dataset and column, so coverage can be computed from run events.",S35,2026-10-27
+M30,assessed,revise,"For AI datasets the required fields should come from an established documentation template rather than the catalog's defaults: Datasheets for Datasets and Data Cards define them (motivation, composition, collection, intended use). This also answers what 'required' means for this metric.",S30;S31;S02,2026-10-27
+M31,assessed,revise,"The ratio depends on the lineage level, which the card did not state, and for AI the lineage must reach training and evaluation data. OpenLineage (maintained, spec 1.54.0) models jobs, runs and datasets with a column-level facet; W3C PROV-O is the standard provenance model.",S35;S34,2026-10-27
 M32,pending,,,,
 M33,pending,,,,
-M34,pending,,,,
+M34,assessed,revise,"'Statistical divergence' named no method. The card now names PSI, KS and Wasserstein per feature type, and, for text or embedding inputs, a two-sample test on reduced representations, which performed best in Rabanser et al. The PSI target had no source: the common cutoffs are rules of thumb used without stated error rates (Yurdakul 2018), so the target is set per system. whylogs has had no updates since January 2025.",S29;S37,2026-10-27
 M35,pending,,,,
 M36,pending,,,,
 M37,pending,,,,

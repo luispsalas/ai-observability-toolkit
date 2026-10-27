@@ -27,3 +27,13 @@ S25,LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory,Di
 S26,Evaluating Very Long-Term Conversational Memory of LLM Agents,Adyasha Maharana et al.,2024,arXiv:2402.17753,https://arxiv.org/abs/2402.17753,preprint
 S27,Cumulated gain-based evaluation of IR techniques,Järvelin et al.,2002,doi:10.1145/582415.582418,https://doi.org/10.1145/582415.582418,paper
 S28,trec_eval: evaluation software used in the Text Retrieval Conference (recip_rank measure),NIST (usnistgov/trec_eval),2026,github:usnistgov/trec_eval m_recip_rank.c,https://github.com/usnistgov/trec_eval,documentation
+S29,Failing Loudly: An Empirical Study of Methods for Detecting Dataset Shift,Stephan Rabanser et al.,2018,arXiv:1810.11953,https://arxiv.org/abs/1810.11953,preprint
+S30,Datasheets for Datasets,Timnit Gebru et al.,2018,arXiv:1803.09010,https://arxiv.org/abs/1803.09010,preprint
+S31,Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI,Mahima Pushkarna et al.,2022,arXiv:2204.01075,https://arxiv.org/abs/2204.01075,preprint
+S32,Guide to Protecting the Confidentiality of Personally Identifiable Information (PII) (SP 800-122),Erika McCallister et al. (NIST),2010,doi:10.6028/NIST.SP.800-122,https://doi.org/10.6028/NIST.SP.800-122,report
+S33,De-Identification of Personal Information (NISTIR 8053),Simson L. Garfinkel (NIST),2015,doi:10.6028/NIST.IR.8053,https://doi.org/10.6028/NIST.IR.8053,report
+S34,PROV-O: The PROV Ontology (W3C Recommendation),W3C,2013,w3c:prov-o,https://www.w3.org/TR/prov-o/,standard
+S35,OpenLineage specification: Object Model and Column Level Lineage Dataset Facet (version 1.54.0),OpenLineage project,2026,openlineage:spec 1.54.0,https://openlineage.io/docs/spec/object-model/,documentation
+S36,presidio-research: Presidio evaluator (SpanEvaluator and F-beta scoring),data-privacy-stack/presidio-research,2026,github:data-privacy-stack/presidio-research,https://github.com/data-privacy-stack/presidio-research,documentation
+S37,"Statistical Properties of Population Stability Index (doctoral dissertation, Western Michigan University)",Bilal Yurdakul,2018,wmich:dissertations/3208,https://scholarworks.wmich.edu/dissertations/3208/,paper
+S38,"scikit-learn 1.9.1 documentation, 3.4 Metrics and scoring",scikit-learn developers,2026,scikit-learn:model_evaluation,https://scikit-learn.org/stable/modules/model_evaluation.html,documentation
