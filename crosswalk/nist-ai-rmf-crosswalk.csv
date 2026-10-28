@@ -85,3 +85,5 @@ M44,MEASURE 2.5,primary,no,"The framework counts accuracy, closeness to values a
 M44,MEASURE 2.4,supporting,no,Becomes production monitoring when sampled from live traffic.,,
 M45,MEASURE 2.3,primary,no,"Measures whether the agent chooses the right tool and arguments, a performance criterion tested on a labeled set.",,
 M45,MEASURE 2.5,supporting,no,Wrong or unnecessary tool calls are a validity failure even when the call runs.,,
+M46,MEASURE 2.5,primary,no,"Refusing safe requests is a failure of the system to do what it is for, shown on a labeled set.",,
+M46,MEASURE 2.3,supporting,no,Over-refusal is measured on a test set as part of the system's performance.,,

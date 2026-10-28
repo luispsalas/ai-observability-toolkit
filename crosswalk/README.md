@@ -1,13 +1,13 @@
 # NIST AI RMF crosswalk
 
-The toolkit's 44 metrics mapped onto the 72 subcategories of the NIST AI Risk Management Framework (AI RMF 1.0). It shows where each metric can serve as evidence for the framework, and where the framework asks for something no metric in the catalog provides.
+The toolkit's 45 metrics mapped onto the 72 subcategories of the NIST AI Risk Management Framework (AI RMF 1.0). It shows where each metric can serve as evidence for the framework, and where the framework asks for something no metric in the catalog provides.
 
-**Files:** [`nist-ai-rmf-crosswalk.csv`](nist-ai-rmf-crosswalk.csv) (86 links, one row per metric and subcategory) · [`../data/nist-ai-rmf.csv`](../data/nist-ai-rmf.csv) (the framework's 19 categories and 72 subcategories, verbatim) · [`../data/metrics.csv`](../data/metrics.csv) (the metrics) · [the framework itself](../sources/)
+**Files:** [`nist-ai-rmf-crosswalk.csv`](nist-ai-rmf-crosswalk.csv) (88 links, one row per metric and subcategory) · [`../data/nist-ai-rmf.csv`](../data/nist-ai-rmf.csv) (the framework's 19 categories and 72 subcategories, verbatim) · [`../data/metrics.csv`](../data/metrics.csv) (the metrics) · [the framework itself](../sources/)
 
 ## What this does not do (read first)
 
 - **It is not a compliance assessment.** A metric linked to a subcategory can supply evidence for it. Collecting that evidence does not by itself meet the subcategory, which usually also asks for a process, a decision or documentation.
-- **It is one person's mapping, checked against NIST's own guidance.** Every link is a judgment written with its reason. The links that were in doubt were checked against the NIST AI RMF Playbook, and 18 now quote the NIST passage they rest on. 6 of the 86 links remain uncertain and are listed at the end. No independent reviewer has checked them yet.
+- **It is one person's mapping, checked against NIST's own guidance.** Every link is a judgment written with its reason. The links that were in doubt were checked against the NIST AI RMF Playbook, and 18 now quote the NIST passage they rest on. 6 of the 88 links remain uncertain and are listed at the end. No independent reviewer has checked them yet.
 - **It covers AI RMF 1.0 only.** NIST states that version 1.0 "is being revised as part of the White House AI Action Plan" (checked October 12, 2026). The Generative AI Profile (NIST AI 600-1) is not mapped yet and is planned for the next version. The Playbook was used to check links, not mapped as a separate document.
 - **It maps the catalog as it stands.** The metrics are being re-audited against current research ([`../data/metric-audit.csv`](../data/metric-audit.csv)), and until a metric has been audited, a gap here can be a gap in this catalog rather than in measurement practice.
 
@@ -44,7 +44,7 @@ To find the evidence for a subcategory, filter the CSV by `subcategory_id`. To f
 
 So "metrics reach 26 of 72 subcategories" is a map of where metrics belong, not a coverage score. Three subcategories that do have a link would also be stronger with metrics NIST's Playbook names and the catalog lacks: energy, water and emissions indicators (MEASURE 2.12), appeal and feedback-participation rates (MEASURE 3.3), and comparison with simpler models or human baselines (MEASURE 3.1).
 
-**The catalog is weighted toward performance, measured on test sets.** 19 of the 44 metrics link to MEASURE 2.3 (performance measured in conditions like deployment), and 10 of them link to nothing else. NIST's guidance for that subcategory warns that performance measured on test data alone is insufficient, and asks for measurement in the deployment context with the people who use the system, and for the differences between the test setting and deployment to be documented. Retrieval and agent metrics in particular say a great deal about how well the system works on a test set and little about its other trustworthiness characteristics.
+**The catalog is weighted toward performance, measured on test sets.** 20 of the 45 metrics link to MEASURE 2.3 (performance measured in conditions like deployment), and 10 of them link to nothing else. NIST's guidance for that subcategory warns that performance measured on test data alone is insufficient, and asks for measurement in the deployment context with the people who use the system, and for the differences between the test setting and deployment to be documented. Retrieval and agent metrics in particular say a great deal about how well the system works on a test set and little about its other trustworthiness characteristics.
 
 **NIST asks for comparisons the catalog cannot make.** The Playbook's guidance for MEASURE 3.1 asks to compare an AI system with simpler or traditional models and with human baseline performance. No metric in the catalog does this.
 
@@ -58,7 +58,7 @@ So "metrics reach 26 of 72 subcategories" is a map of where metrics belong, not 
 
 **Content safety waits for the Generative AI Profile.** The framework defines safety as not endangering human life, health, property or the environment. The catalog's toxicity, policy-violation and refusal metrics are linked to MEASURE 2.6 on a broader reading and marked uncertain until the Profile, which treats harmful content directly, is mapped.
 
-**Every metric links somewhere.** All 44 have at least one link, and 38 provide primary evidence for at least one subcategory. The other 6 only support.
+**Every metric links somewhere.** All 45 have at least one link, and 39 provide primary evidence for at least one subcategory. The other 6 only support.
 
 ## Summary tables
 
@@ -104,13 +104,13 @@ Each subcategory is shown as its id, marked **bold** where at least one metric i
 
 | Subcategory | Metrics linked | Of which primary |
 |---|---|---|
-| MEASURE 2.3 | 19 | 18 |
-| MEASURE 2.5 | 11 | 5 |
+| MEASURE 2.3 | 20 | 18 |
+| MEASURE 2.5 | 12 | 6 |
 | MEASURE 2.4 | 8 | 6 |
 | MEASURE 2.6 | 5 | 3 |
 | MEASURE 2.8 | 5 | 1 |
 
-### Uncertain calls (6 of 86 links)
+### Uncertain calls (6 of 88 links)
 
 | Metric | Subcategory | Relation | Why it is uncertain |
 |---|---|---|---|

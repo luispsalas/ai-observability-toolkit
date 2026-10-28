@@ -10,12 +10,12 @@ M08,assessed,revise,"Phase A narrowed the calculation to a rubric score, but the
 M09,assessed,revise,Definition sound. Judge-based scoring is only as good as its measured agreement with humans; only the strongest judge models align reasonably. Added judge-agreement and standard-error requirements.,S06;S07;S08,2026-10-26
 M10,assessed,split,"Accepted by the user 2026-10-26. The formula measures only citation precision, so the metric is renamed Citation Precision and citation recall is added as M43, following the ALCE paper's two citation measures (recall prioritized). Recent work also doubts binary support checks and judges alone for citations.",S04;S11;S12,2026-10-26
 M11,assessed,revise,"Valid as a cheap reference-similarity check, but similarity is not correctness and depends on the embedding model. Added that pitfall. The BERTScore library has not been updated since July 2024 (checked on GitHub).",S09,2026-10-26
-M12,pending,,,,
-M13,pending,,,,
+M12,assessed,revise,"'Success' now means meeting written acceptance criteria on a fixed test set per prompt version. Sclar et al. found formatting changes alone moved accuracy by up to 76 points, so the card asks for a range across prompt variants. The ≥ 0.95 target had no source and is now set per system. promptfoo is now part of OpenAI and remains open source.",S53;S54,2026-10-27
+M13,assessed,revise,"The card covered only attacks in the user's prompt; indirect injection through retrieved data and tool results (Greshake et al.) is the main risk for RAG and agents. AgentDojo evaluates attack success and utility under attack, which detection alone does not show. Rebuff and LLM Guard are archived; garak is maintained.",S46;S47;S55,2026-10-27
 M14,assessed,merge,"Accepted by the user 2026-10-26. As defined it was the complement of M07 Faithfulness (same claims, same context), so it is retired into M07; its id is not reused. Factual precision against a knowledge source, which the literature distinguishes from faithfulness, is added as M44.",S03;S05;S14;S15,2026-10-26
-M15,pending,,,,
-M16,pending,,,,
-M17,pending,,,,
+M15,assessed,revise,"Perspective API, the card's first tool, stops working after December 31, 2026 per its own site, and LLM Guard is archived. The rate depends on the classifier, its threshold and the prompts (RealToxicityPrompts), so all three are now stated. The MEASURE 2.6 link stays uncertain until Phase C maps the Generative AI Profile.",S56;S55;S48;S52,2026-10-27
+M16,assessed,revise,"Violations are now counted per policy category, by a classifier that can take the system's own taxonomy (Llama Guard) or by human review, so measurement_method gained 'human_rating'. Attack success under red teaming is a separate question, with standardized sets such as HarmBench.",S52;S51;S55,2026-10-27
+M17,assessed,split,"Accepted by the user 2026-10-27. M17 stays refusal of unsafe requests; over-refusal of safe prompts that resemble unsafe ones, which XSTest and OR-Bench show is a systematic failure needing its own test set, is added as M46.",S49;S50,2026-10-27
 M18,pending,,,,
 M19,pending,,,,
 M20,pending,,,,
@@ -44,3 +44,4 @@ M42,pending,,,,
 M43,assessed,keep,"Added 2026-10-26 by the split of M10, defined as citation recall in the ALCE paper.",S04;S11,2026-10-26
 M44,assessed,keep,"Added 2026-10-26 to replace the intent of M14: factual precision against a reliable knowledge source, as defined by FActScore, distinct from faithfulness to the given context.",S05;S15,2026-10-26
 M45,assessed,keep,"Added 2026-10-27 by the split of M21: tool call correctness scored against labeled expected calls with acceptable argument values, including cases where no call should be made, as the Berkeley Function-Calling Leaderboard does.",S43,2026-10-27
+M46,assessed,keep,"Added 2026-10-27 by the split of M17: the share of safe prompts refused, measured on safe prompts that resemble unsafe ones, as XSTest (250 safe prompts) and OR-Bench do.",S49;S50,2026-10-27
