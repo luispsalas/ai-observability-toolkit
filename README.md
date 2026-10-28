@@ -24,7 +24,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 
 | Item | What it does | Status |
 |---|---|---|
-| [**Metric catalog data**](data/) | The AI Metrics Catalog's metrics as one data file (43 after the audit so far), each placed in an area of the AI system, tagged with the NIST characteristic it gives evidence for and with how it is measured | **available** |
+| [**Metric catalog data**](data/) | The AI Metrics Catalog's metrics as one data file (44 after the audit so far), each placed in an area of the AI system, tagged with the NIST characteristic it gives evidence for and with how it is measured | **available** |
 | [**NIST AI RMF crosswalk**](crosswalk/) | Maps the metrics to the framework's four functions (Govern, Map, Measure, Manage) and shows where the framework asks for evidence no metric provides | **available** |
 | Data quality dimensions for AI | Starts from the classic dimensions (accuracy, completeness, consistency, timeliness, validity) and shows what changes for each when the system's output is generated | planned |
 | Metrics and business goals | Links each metric to the business question it answers, so a dashboard can be read by the people who fund the system | planned |
@@ -45,7 +45,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 
 - **It is not a compliance checklist.** The NIST crosswalk shows where metrics can supply evidence for the framework. Metrics reach 26 of its 72 subcategories, and meeting it takes policies, roles and documentation as well.
 - **The use cases are small.** Most run on a lab built for this purpose, not on a production system, and each will say so with its sample size.
-- **The metric audit is under way.** 20 of the 43 metrics have been checked against current research so far ([`data/metric-audit.csv`](data/metric-audit.csv)); the rest still carry tool lists and target ranges from August 2026, and tools in this area change quickly.
+- **The metric audit is under way.** 25 of the 44 metrics have been checked against current research so far ([`data/metric-audit.csv`](data/metric-audit.csv)); the rest still carry tool lists and target ranges from August 2026, and tools in this area change quickly.
 
 ## Why it matters
 
@@ -68,7 +68,7 @@ Python 3, standard library only. The data is plain CSV, so it opens in any sprea
 ## Repository map
 
 ```
-data/       metrics.csv (43 metrics), areas.csv (6 areas), metric-audit.csv, nist-ai-rmf.csv (72 subcategories)
+data/       metrics.csv (44 metrics), areas.csv (6 areas), metric-audit.csv, nist-ai-rmf.csv (72 subcategories)
 crosswalk/  the NIST AI RMF crosswalk: one CSV of links and a README with findings
 sources/    the NIST AI RMF 1.0 and its Playbook, with citations and how their text was checked
 tools/      check_data.py (22 rules) and its tests, the NIST extractor, the summary generator

@@ -37,3 +37,10 @@ S35,OpenLineage specification: Object Model and Column Level Lineage Dataset Fac
 S36,presidio-research: Presidio evaluator (SpanEvaluator and F-beta scoring),data-privacy-stack/presidio-research,2026,github:data-privacy-stack/presidio-research,https://github.com/data-privacy-stack/presidio-research,documentation
 S37,"Statistical Properties of Population Stability Index (doctoral dissertation, Western Michigan University)",Bilal Yurdakul,2018,wmich:dissertations/3208,https://scholarworks.wmich.edu/dissertations/3208/,paper
 S38,"scikit-learn 1.9.1 documentation, 3.4 Metrics and scoring",scikit-learn developers,2026,scikit-learn:model_evaluation,https://scikit-learn.org/stable/modules/model_evaluation.html,documentation
+S39,τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains,Shunyu Yao et al.,2024,arXiv:2406.12045,https://arxiv.org/abs/2406.12045,preprint
+S40,AI Agents That Matter,Sayash Kapoor et al.,2024,arXiv:2407.01502,https://arxiv.org/abs/2407.01502,preprint
+S41,Why Do Multi-Agent LLM Systems Fail?,Mert Cemri et al.,2025,arXiv:2503.13657,https://arxiv.org/abs/2503.13657,preprint
+S42,PlanBench: An Extensible Benchmark for Evaluating Large Language Models on Planning and Reasoning about Change,Karthik Valmeekam et al.,2022,arXiv:2206.10498,https://arxiv.org/abs/2206.10498,preprint
+S43,Berkeley Function-Calling Leaderboard (Gorilla blog 8),Fanjia Yan et al.,2024,gorilla:blog 8 (last updated 2024-08-19),https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html,documentation
+S44,OpenTelemetry semantic conventions for generative AI: agent spans (status: Development),OpenTelemetry (open-telemetry/semantic-conventions-genai),2026,github:open-telemetry/semantic-conventions-genai docs/gen-ai/gen-ai-agent-spans.md,https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md,documentation
+S45,AutoGen README (archive notice and migration to Microsoft Agent Framework),Microsoft (microsoft/autogen),2026,github:microsoft/autogen,https://github.com/microsoft/autogen,documentation

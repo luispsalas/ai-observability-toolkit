@@ -83,3 +83,5 @@ M43,MEASURE 2.5,primary,no,"Checks that every statement is supported by the sour
 M43,MEASURE 2.8,supporting,no,"Complete citations let a reader trace each claim to its source, which supports transparency.",,
 M44,MEASURE 2.5,primary,no,"The framework counts accuracy, closeness to values accepted as true, as part of validity; facts checked against a reliable source are that closeness.",AI RMF 1.0 §3.1,"closeness of results of observations, computations, or estimates to the true values or the values accepted as being true"
 M44,MEASURE 2.4,supporting,no,Becomes production monitoring when sampled from live traffic.,,
+M45,MEASURE 2.3,primary,no,"Measures whether the agent chooses the right tool and arguments, a performance criterion tested on a labeled set.",,
+M45,MEASURE 2.5,supporting,no,Wrong or unnecessary tool calls are a validity failure even when the call runs.,,

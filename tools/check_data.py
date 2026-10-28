@@ -22,7 +22,7 @@ OPTIONAL = {"toolkit_use_cases"}  # filled in as use cases are written
 
 # How many rows the checks expect to see. A check that inspects fewer rows than
 # this fails loudly instead of passing quietly on an empty or truncated file.
-EXPECTED_METRICS = 43
+EXPECTED_METRICS = 44
 EXPECTED_AREAS = 6
 EXPECTED_NIST = (19, 72)  # AI RMF 1.0 categories, subcategories
 

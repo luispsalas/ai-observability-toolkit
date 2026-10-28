@@ -19,10 +19,10 @@ M17,pending,,,,
 M18,pending,,,,
 M19,pending,,,,
 M20,pending,,,,
-M21,pending,,,,
-M22,pending,,,,
-M23,pending,,,,
-M24,pending,,,,
+M21,assessed,split,"Accepted by the user 2026-10-27. M21 stays execution success (does the call run without error), counted from traces; correctness of the call (right tool, right arguments, no call when none is needed) is added as M45, following the Berkeley Function-Calling Leaderboard, which evaluates call correctness and relevance detection separately. OpenTelemetry's agent spans are still at Development status.",S43;S44,2026-10-27
+M22,assessed,revise,"Success now judged on the end state where possible (τ-bench) and over repeated runs, since τ-bench's pass^k shows single runs overstate reliability; Kapoor et al. show agent accuracy should be reported with cost. An end-state check is deterministic, so measurement_method gained 'deterministic'.",S39;S40,2026-10-27
+M23,assessed,revise,"A deterministic log can show that a handoff happened, not that the receiver got the right task and context, which is where multi-agent systems fail (MAST: inter-agent misalignment is one of three failure categories, with an LLM judge validated against human annotation). measurement_method gained 'llm_judge'. AutoGen is archived; Microsoft points users to Microsoft Agent Framework.",S41;S44;S45,2026-10-27
+M24,assessed,revise,"'Valid' now names its check: a validator in formal domains, as PlanBench uses, or a judge against reference plans. PlanBench found plan generation falls short even for the strongest models, which supports keeping plan quality and execution as separate measures.",S42,2026-10-27
 M25,assessed,revise,"Memory benchmarks (LongMemEval, LoCoMo) evaluate several distinct memory abilities and report large drops for commercial assistants over long interactions; one accuracy hides which ability fails. Scoring against labeled ground truth is a human-label method, not a deterministic one, so measurement_method was corrected.",S25;S26,2026-10-26
 M26,assessed,revise,"Accuracy on its own hides the costly error (sensitive data labeled as less sensitive) under class imbalance; scikit-learn documents balanced accuracy and per-class scores for this. NIST SP 800-122 says the same PII can take different impact levels by context of use, so ground truth must be labeled for the context.",S38;S32,2026-10-27
 M27,assessed,revise,"The formula did not say when a detection counts as a hit; the Presidio evaluator matches spans by character overlap (default threshold 0.9) and reports per entity type. Presidio has moved to the data-privacy-stack GitHub organization. NIST SP 800-122 and NISTIR 8053 show that identifiers outside a fixed list, and fields in combination, can still identify people, so recall over the label set is not full coverage. The ≥ 0.98 target is consistent with the 99.2% removal rate NISTIR 8053 reports for one clinical system.",S36;S32;S33,2026-10-27
@@ -43,3 +43,4 @@ M41,pending,,,,
 M42,pending,,,,
 M43,assessed,keep,"Added 2026-10-26 by the split of M10, defined as citation recall in the ALCE paper.",S04;S11,2026-10-26
 M44,assessed,keep,"Added 2026-10-26 to replace the intent of M14: factual precision against a reliable knowledge source, as defined by FActScore, distinct from faithfulness to the given context.",S05;S15,2026-10-26
+M45,assessed,keep,"Added 2026-10-27 by the split of M21: tool call correctness scored against labeled expected calls with acceptable argument values, including cases where no call should be made, as the Berkeley Function-Calling Leaderboard does.",S43,2026-10-27
