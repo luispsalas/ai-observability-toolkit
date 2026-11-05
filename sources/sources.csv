@@ -60,3 +60,8 @@ S58,Site Reliability Engineering: Service Level Objectives,Chris Jones et al. (G
 S59,OpenTelemetry semantic conventions for generative AI metrics and inference token metrics (status: Development),OpenTelemetry (open-telemetry/semantic-conventions-genai),2026,"github:open-telemetry/semantic-conventions-genai docs/gen-ai/gen-ai-metrics.md, gen-ai-token-metrics.md",https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-metrics.md,documentation
 S60,DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving,Yinmin Zhong et al.,2024,arXiv:2401.09670,https://arxiv.org/abs/2401.09670,preprint
 S61,tiktoken README (a BPE tokeniser for use with OpenAI's models),openai/tiktoken,2026,github:openai/tiktoken,https://github.com/openai/tiktoken,documentation
+S62,Appropriate Reliance on AI Advice: Conceptualization and the Effect of Explanations,Max Schemmer et al.,2023,arXiv:2302.02187,https://arxiv.org/abs/2302.02187,preprint
+S63,Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity,Joel Becker et al.,2025,arXiv:2507.09089,https://arxiv.org/abs/2507.09089,preprint
+S64,Interpretable User Satisfaction Estimation for Conversational Systems with Large Language Models,Ying-Chun Lin et al.,2024,arXiv:2403.12388,https://arxiv.org/abs/2403.12388,preprint
+S65,Generative AI at Work,Brynjolfsson et al.,2025,doi:10.1093/qje/qjae044,https://doi.org/10.1093/qje/qjae044,paper
+S66,Trustworthy Online Controlled Experiments,Kohavi et al.,2020,doi:10.1017/9781108653985,https://doi.org/10.1017/9781108653985,paper
