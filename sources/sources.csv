@@ -65,3 +65,8 @@ S63,Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer P
 S64,Interpretable User Satisfaction Estimation for Conversational Systems with Large Language Models,Ying-Chun Lin et al.,2024,arXiv:2403.12388,https://arxiv.org/abs/2403.12388,preprint
 S65,Generative AI at Work,Brynjolfsson et al.,2025,doi:10.1093/qje/qjae044,https://doi.org/10.1093/qje/qjae044,paper
 S66,Trustworthy Online Controlled Experiments,Kohavi et al.,2020,doi:10.1017/9781108653985,https://doi.org/10.1017/9781108653985,paper
+S67,Benchmarking Large Language Models in Retrieval-Augmented Generation,Jiawei Chen et al.,2023,arXiv:2309.01431,https://arxiv.org/abs/2309.01431,preprint
+S68,Large Language Models Can Be Easily Distracted by Irrelevant Context,Freda Shi et al.,2023,arXiv:2302.00093,https://arxiv.org/abs/2302.00093,preprint
+S69,Four Principles of Explainable Artificial Intelligence (NISTIR 8312),P. Jonathon Phillips et al. (NIST),2021,doi:10.6028/NIST.IR.8312,https://doi.org/10.6028/NIST.IR.8312,report
+S70,Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting,Miles Turpin et al.,2023,arXiv:2305.04388,https://arxiv.org/abs/2305.04388,preprint
+S71,Towards Faithfully Interpretable NLP Systems: How should we define and evaluate faithfulness?,Alon Jacovi et al.,2020,arXiv:2004.03685,https://arxiv.org/abs/2004.03685,preprint

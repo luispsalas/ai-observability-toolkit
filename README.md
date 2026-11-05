@@ -24,7 +24,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 
 | Item | What it does | Status |
 |---|---|---|
-| [**Metric catalog data**](data/) | The AI Metrics Catalog's metrics as one data file (45 after the audit so far), each placed in an area of the AI system, tagged with the NIST characteristic it gives evidence for and with how it is measured | **available** |
+| [**Metric catalog data**](data/) | The AI Metrics Catalog's metrics as one data file (45 after the audit), each placed in an area of the AI system, tagged with the NIST characteristic it gives evidence for and with how it is measured | **available** |
 | [**NIST AI RMF crosswalk**](crosswalk/) | Maps the metrics to the framework's four functions (Govern, Map, Measure, Manage) and shows where the framework asks for evidence no metric provides | **available** |
 | NIST Generative AI Profile crosswalk | Extends the NIST crosswalk to the twelve risks NIST's Generative AI Profile (AI 600-1) adds for generative systems, such as confabulation and harmful content, where content safety metrics belong | planned |
 | EU AI Act crosswalk | Maps the metrics, and the records a system has to keep, to the AI Act's obligations by role (provider or deployer) and risk category, quoting each article from the official text. It shows which duties call for a record rather than a metric, and when each duty applies | planned |
@@ -47,7 +47,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 
 - **It is not a compliance checklist.** The NIST crosswalk shows where metrics can supply evidence for the framework. Metrics reach 26 of its 72 subcategories, and meeting it takes policies, roles and documentation as well.
 - **The use cases are small.** Most run on a lab built for this purpose, not on a production system, and each will say so with its sample size.
-- **The metric audit is under way.** 42 of the 45 metrics have been checked against current research so far ([`data/metric-audit.csv`](data/metric-audit.csv)); the rest still carry tool lists and target ranges from August 2026, and tools in this area change quickly.
+- **The metrics were checked against research and tools as of October and November 2026.** All 45 have an audit result with its sources ([`data/metric-audit.csv`](data/metric-audit.csv)). Tools in this area change quickly, so each row's date matters. Alignment with standards beyond the NIST AI RMF 1.0 is still planned.
 
 ## Why it matters
 
