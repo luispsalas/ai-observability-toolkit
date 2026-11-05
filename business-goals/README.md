@@ -17,8 +17,8 @@ A dashboard of 45 metric names is hard to read for anyone outside the team that 
 
 1. **Pick the questions your system has to answer** from the table below, and add your own.
 2. **Take the metrics listed for each question.** Begin with the ones marked *(F)*, the Foundational tier, which suit a system from its first release. Add an Intermediate or Advanced metric only when it answers a question you actually have.
-3. **Copy the [scorecard template](scorecard-template.csv)** into a spreadsheet and keep the rows you chose. For each, write the target you set for your system, the owner (one person or team per metric) and how often it is reviewed.
-4. **Review on that cadence**, and record the current value and a note on what changed.
+3. **Copy the [scorecard template](scorecard-template.csv)** into a spreadsheet and keep the rows you chose. For each, write the target you set for your system and when it was approved, the team that measures it, the person accountable for it, and the date of its next review.
+4. **Review by that date**, record the current value and a note on what changed, and set the next date.
 
 There is no recommended number of metrics. The old catalog suggested 20 to 25, a figure tied to a layer scheme the toolkit no longer uses and backed by no source. The 17 Foundational metrics are a reasonable first set, and the questions decide what comes next.
 
@@ -58,16 +58,28 @@ Questions are grouped by the goal they serve: Business Value, Technical Quality,
 | `answers_questions` | The questions above that the metric answers |
 | `card_target` | The card's rule or starting point for a target |
 | `system_target` | The target you set for your system |
-| `current_value` | The latest value, updated on your review cadence |
-| `owner` | One person or team who answers for the metric |
-| `review_cadence` | How often it is reviewed: weekly, monthly, quarterly |
+| `target_approved_on` | When the accountable person approved that target |
+| `current_value` | The latest value, updated at each review |
+| `owner` | The team that measures the metric and keeps it current |
+| `accountable` | The person who answers for the target and has the authority to change it or act on it (a named person in a real scorecard) |
+| `next_review` | The date of the next review |
 | `notes` | Trends, blockers, planned changes |
 
 The template is generated from the data by `tools/build_scorecard.py`, so it changes when a card changes and never drifts from the catalog.
 
+### Who owns a metric
+
+The columns separate the team that measures a metric from the person accountable for its target, because the sources ask for both:
+
+- The NIST AI Risk Management Framework asks that roles for measuring AI risk be documented and clear "to individuals and teams throughout the organization" (GOVERN 2.1). Its Playbook adds that accountability "ensures that a specific team and individual is responsible" (GOVERN 2.3).
+- Google's SRE workbook says a reliability target "needs to be owned by someone in the organization who is empowered to make tradeoffs", usually the product owner. It asks each target's record to name who approved it, when, and when it will next be reviewed. ([Implementing SLOs](https://sre.google/workbook/implementing-slos/), where SLO stands for service level objective.)
+- For high-risk systems, the European Union's AI Act requires deployers to "assign human oversight to natural persons who have the necessary competence, training and authority" ([Article 26(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689)). That makes accountability for oversight metrics, such as human override rate (M37), a named person's by law.
+
+None of them says every metric needs its own person. One person can be accountable for several metrics, as long as they have the authority to act on each.
+
 ## Worked example: Atlas (fictional)
 
-[`atlas-example.csv`](atlas-example.csv) is the scorecard of an invented internal support assistant. It answers staff questions from a human resources and IT knowledge base and files tickets through an agent. It tracks 17 metrics chosen from 12 questions, mostly Foundational plus those its questions required.
+[`atlas-example.csv`](atlas-example.csv) is the scorecard of an invented internal support assistant. It answers staff questions from a human resources and IT knowledge base and files tickets through an agent. It tracks 17 metrics chosen from 12 questions, mostly Foundational plus those its questions required. Each row names a measuring team and an accountable role; the roles stand in for the named people a real scorecard would list.
 
 A few rows show how a scorecard is read rather than just filled in:
 
@@ -77,4 +89,4 @@ A few rows show how a scorecard is read rather than just filled in:
 
 ## Checks
 
-`tools/check_data.py` checks this page's data along with the rest of the toolkit. Every question must name real metrics, every metric must answer at least one question, the template must match what `tools/build_scorecard.py` generates, and every row of the example must use a metric's current name under a question that lists it.
+`tools/check_data.py` checks this page's data along with the rest of the toolkit. Every question must name real metrics, every metric must answer at least one question, the template must match what `tools/build_scorecard.py` generates, and every row of the example must use a metric's current name under a question that lists it, name an accountable role, and give its approval and next-review dates.

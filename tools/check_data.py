@@ -58,12 +58,15 @@ TOOLKIT_USE_CASES = {
 QUESTION_COLUMNS = ["id", "goal", "question", "metric_ids", "how_the_metrics_answer"]
 # The scorecard template is derived from metrics.csv and business-questions.csv by
 # tools/build_scorecard.py; rule r24 checks the file on disk still matches.
+# Ownership columns follow NIST's Playbook (a team and an individual), the SRE workbook
+# (an owner with authority over the target, approval and next-review dates) and the EU AI Act
+# Art. 26(2) (oversight assigned to natural persons): see business-goals/README.md.
+PLANNING_COLUMNS = ["system_target", "target_approved_on", "current_value", "owner", "accountable", "next_review", "notes"]
 TEMPLATE_COLUMNS = [
     "tier", "metric_id", "metric_name", "area", "characteristic", "answers_questions", "card_target",
-    "system_target", "current_value", "owner", "review_cadence", "notes",
-]
-ATLAS_COLUMNS = ["question_id", "metric_id", "metric_name", "system_target", "current_value", "status",
-                 "owner", "review_cadence", "notes"]
+] + PLANNING_COLUMNS
+ATLAS_COLUMNS = ["question_id", "metric_id", "metric_name", "system_target", "target_approved_on", "current_value",
+                 "status", "owner", "accountable", "next_review", "notes"]
 ATLAS_STATUSES = {"on track", "watch", "off track"}
 
 
@@ -358,7 +361,7 @@ def scorecard_rows(metrics, questions):
     order = {t: i for i, t in enumerate(["Foundational", "Intermediate", "Advanced"])}
     rows = sorted(metrics, key=lambda r: (order.get(r.get("tier"), 9), int(r.get("id", "M0")[1:] or 0)))
     return [[r.get("tier", ""), r.get("id", ""), r.get("name", ""), r.get("area", ""), r.get("characteristic", ""),
-             ";".join(asked.get(r.get("id"), [])), r.get("healthy_target", ""), "", "", "", "", ""] for r in rows]
+             ";".join(asked.get(r.get("id"), [])), r.get("healthy_target", "")] + [""] * len(PLANNING_COLUMNS) for r in rows]
 
 
 def r23_business_questions(d):
@@ -419,6 +422,11 @@ def r25_atlas_example(d):
             yield f"atlas-example.csv line {i}: question {qid} does not list {mid}"
         if r.get("status") not in ATLAS_STATUSES:
             yield f"atlas-example.csv line {i}: status {r.get('status')!r} is not one of {sorted(ATLAS_STATUSES)}"
+        if not r.get("accountable", "").strip():
+            yield f"atlas-example.csv line {i}: no accountable role for {mid}"
+        for col in ("target_approved_on", "next_review"):
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", r.get(col, "")):
+                yield f"atlas-example.csv line {i}: {col} {r.get(col)!r} is not a YYYY-MM-DD date"
 
 
 RULES = {f.__name__.split("_")[0]: f for f in (

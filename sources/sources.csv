@@ -70,3 +70,5 @@ S68,Large Language Models Can Be Easily Distracted by Irrelevant Context,Freda S
 S69,Four Principles of Explainable Artificial Intelligence (NISTIR 8312),P. Jonathon Phillips et al. (NIST),2021,doi:10.6028/NIST.IR.8312,https://doi.org/10.6028/NIST.IR.8312,report
 S70,Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting,Miles Turpin et al.,2023,arXiv:2305.04388,https://arxiv.org/abs/2305.04388,preprint
 S71,Towards Faithfully Interpretable NLP Systems: How should we define and evaluate faithfulness?,Alon Jacovi et al.,2020,arXiv:2004.03685,https://arxiv.org/abs/2004.03685,preprint
+S72,The Site Reliability Workbook: Implementing SLOs,Google,2018,sre.google/workbook/implementing-slos,https://sre.google/workbook/implementing-slos/,documentation
+S73,Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act),European Parliament and Council of the European Union,2024,CELEX:32024R1689,https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689,regulation

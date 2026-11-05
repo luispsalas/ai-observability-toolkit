@@ -1,18 +1,18 @@
-question_id,metric_id,metric_name,system_target,current_value,status,owner,review_cadence,notes
-Q01,M41,Adoption Rate,60% of eligible staff active each month by the end of Q2 (business case),54%,watch,Product,Monthly,Rising about 4 points a month.
-Q01,M38,User Satisfaction Score,At least 4.0 of 5 on the end-of-chat question,4.1 of 5 (response rate 8%),watch,Product,Monthly,Score is fine but the response rate is too low to read alone; see Q02.
-Q02,M39,Business Outcome Lift,Ticket resolution time 10% shorter than in control teams,6% shorter (pilot against control; not yet significant),watch,Product,Quarterly,Pilot ends in March; decide on rollout then.
-Q03,M20,Cost per Request,At most $0.05 per resolved request (business case),$0.041,on track,FinOps,Monthly,Includes retrieval and the human review queue.
-Q04,M01,Context Precision,At least 0.80 on the 300-question HR and IT test set,0.82,on track,Retrieval team,Monthly,
-Q04,M02,Context Recall,At least 0.85 on the same test set,0.79,watch,Retrieval team,Monthly,Misses cluster in policy documents added since June.
-Q05,M07,Faithfulness,At least 0.90; judge checked against 50 human ratings each quarter,0.91,on track,Evaluation,Monthly,Judge agreed with raters on 46 of 50 last quarter.
-Q05,M44,Factual Precision,No drop from the July baseline of 0.93,0.94,on track,Evaluation,Monthly,
-Q07,M22,Agent Task Completion Rate,At least 80% of ticket-filing tasks succeed in all of 3 runs,78%,watch,Agents team,Monthly,Single-run success is 88%; repeated runs show the gap.
-Q07,M45,Tool Call Correctness,No drop from the baseline of 0.92 on 120 labeled requests,0.95,on track,Agents team,Monthly,
-Q08,M18,Latency (P50/P95/P99),P95 at most 6 seconds (service level objective),P95 4.6 seconds,on track,Platform,Weekly,
-Q08,M36,Error Rate,At most 1% of requests (explicit and by policy),0.7%,on track,Platform,Weekly,
-Q10,M27,PII Detection Recall,At least 0.98 for national ID numbers and salary data,0.97,watch,Data governance,Monthly,Two misses were ID numbers inside scanned forms.
-Q12,M46,Over-Refusal Rate,At most 5% on 200 safe HR questions that look sensitive,7.5%,off track,Trust and safety,Monthly,Refuses most questions about leave for medical reasons.
-Q13,M42,Audit Trail Coverage,100% of tickets the agent files,99.4%,watch,Governance,Monthly,Gaps come from one integration that drops the request ID.
-Q15,M37,Human Override Rate,Baseline 9%; investigate a sustained rise or a fall toward zero,9%,on track,Governance,Monthly,
-Q06,M34,Data Drift Score,Alert level calibrated on six past months,Within the alert level,on track,MLOps,Weekly,
+question_id,metric_id,metric_name,system_target,target_approved_on,current_value,status,owner,accountable,next_review,notes
+Q01,M41,Adoption Rate,60% of eligible staff active each month by the end of Q2 (business case),2026-07-01,54%,watch,Product,Support product manager,2026-12-01,Rising about 4 points a month.
+Q01,M38,User Satisfaction Score,At least 4.0 of 5 on the end-of-chat question,2026-07-01,4.1 of 5 (response rate 8%),watch,Product,Support product manager,2026-12-01,Score is fine but the response rate is too low to read alone; see Q02.
+Q02,M39,Business Outcome Lift,Ticket resolution time 10% shorter than in control teams,2026-06-15,6% shorter (pilot against control; not yet significant),watch,Product,Support product manager,2027-01-15,Pilot ends in March; decide on rollout then.
+Q03,M20,Cost per Request,At most $0.05 per resolved request (business case),2026-07-01,$0.041,on track,FinOps,Support product manager,2026-12-01,Includes retrieval and the human review queue.
+Q04,M01,Context Precision,At least 0.80 on the 300-question HR and IT test set,2026-07-01,0.82,on track,Retrieval team,AI quality lead,2026-12-01,
+Q04,M02,Context Recall,At least 0.85 on the same test set,2026-07-01,0.79,watch,Retrieval team,AI quality lead,2026-12-01,Misses cluster in policy documents added since June.
+Q05,M07,Faithfulness,At least 0.90; judge checked against 50 human ratings each quarter,2026-07-01,0.91,on track,Evaluation,AI quality lead,2026-12-01,Judge agreed with raters on 46 of 50 last quarter.
+Q05,M44,Factual Precision,No drop from the July baseline of 0.93,2026-07-01,0.94,on track,Evaluation,AI quality lead,2026-12-01,
+Q07,M22,Agent Task Completion Rate,At least 80% of ticket-filing tasks succeed in all of 3 runs,2026-07-01,78%,watch,Agents team,Agents lead,2026-12-01,Single-run success is 88%; repeated runs show the gap.
+Q07,M45,Tool Call Correctness,No drop from the baseline of 0.92 on 120 labeled requests,2026-07-01,0.95,on track,Agents team,Agents lead,2026-12-01,
+Q08,M18,Latency (P50/P95/P99),P95 at most 6 seconds (service level objective),2026-07-01,P95 4.6 seconds,on track,Platform,Support product manager,2026-11-12,
+Q08,M36,Error Rate,At most 1% of requests (explicit and by policy),2026-07-01,0.7%,on track,Platform,Support product manager,2026-11-12,
+Q10,M27,PII Detection Recall,At least 0.98 for national ID numbers and salary data,2026-07-01,0.97,watch,Data governance,Data protection officer,2026-12-01,Two misses were ID numbers inside scanned forms.
+Q12,M46,Over-Refusal Rate,At most 5% on 200 safe HR questions that look sensitive,2026-09-15,7.5%,off track,Trust and safety,Trust and safety lead,2026-12-01,Refuses most questions about leave for medical reasons.
+Q13,M42,Audit Trail Coverage,100% of tickets the agent files,2026-07-01,99.4%,watch,Governance,AI governance lead,2026-12-01,Gaps come from one integration that drops the request ID.
+Q15,M37,Human Override Rate,Baseline 9%; investigate a sustained rise or a fall toward zero,2026-07-01,9%,on track,Governance,HR operations manager,2026-12-01,
+Q06,M34,Data Drift Score,Alert level calibrated on six past months,2026-07-01,Within the alert level,on track,MLOps,AI quality lead,2026-11-12,
