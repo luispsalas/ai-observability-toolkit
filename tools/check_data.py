@@ -63,7 +63,7 @@ QUESTION_COLUMNS = ["id", "goal", "question", "metric_ids", "how_the_metrics_ans
 # Art. 26(2) (oversight assigned to natural persons): see business-goals/README.md.
 PLANNING_COLUMNS = ["system_target", "target_approved_on", "current_value", "owner", "accountable", "next_review", "notes"]
 TEMPLATE_COLUMNS = [
-    "tier", "metric_id", "metric_name", "area", "characteristic", "answers_questions", "card_target",
+    "tier", "metric_id", "metric_name", "definition", "area", "characteristic", "answers_questions", "card_target",
 ] + PLANNING_COLUMNS
 ATLAS_COLUMNS = ["question_id", "metric_id", "metric_name", "system_target", "target_approved_on", "current_value",
                  "status", "owner", "accountable", "next_review", "notes"]
@@ -360,7 +360,8 @@ def scorecard_rows(metrics, questions):
             asked.setdefault(mid, []).append(q.get("id", ""))
     order = {t: i for i, t in enumerate(["Foundational", "Intermediate", "Advanced"])}
     rows = sorted(metrics, key=lambda r: (order.get(r.get("tier"), 9), int(r.get("id", "M0")[1:] or 0)))
-    return [[r.get("tier", ""), r.get("id", ""), r.get("name", ""), r.get("area", ""), r.get("characteristic", ""),
+    return [[r.get("tier", ""), r.get("id", ""), r.get("name", ""), r.get("description", ""), r.get("area", ""),
+             r.get("characteristic", ""),
              ";".join(asked.get(r.get("id"), [])), r.get("healthy_target", "")] + [""] * len(PLANNING_COLUMNS) for r in rows]
 
 

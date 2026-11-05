@@ -50,11 +50,12 @@ Questions are grouped by the goal they serve: Business Value, Technical Quality,
 
 ## The scorecard template
 
-[`scorecard-template.csv`](scorecard-template.csv) has one row per metric, Foundational first. The first seven columns come from the catalog and the rest are yours to fill in.
+[`scorecard-template.csv`](scorecard-template.csv) has one row per metric, Foundational first. The first eight columns come from the catalog and the rest are yours to fill in.
 
 | Column | Holds |
 |---|---|
 | `tier`, `metric_id`, `metric_name`, `area`, `characteristic` | The metric, as in [`../data/metrics.csv`](../data/metrics.csv) |
+| `definition` | What the metric measures, in one line (the card's description) |
 | `answers_questions` | The questions above that the metric answers |
 | `card_target` | The card's rule or starting point for a target |
 | `system_target` | The target you set for your system |
