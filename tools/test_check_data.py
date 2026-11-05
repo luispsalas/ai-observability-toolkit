@@ -16,7 +16,8 @@ import check_data  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ["data/metrics.csv", "data/areas.csv", "data/nist-ai-rmf.csv", "crosswalk/nist-ai-rmf-crosswalk.csv",
          "sources/NIST-AI-RMF-Playbook.json", "sources/NIST.AI.100-1.txt",
-         "data/metric-audit.csv", "sources/sources.csv"]
+         "data/metric-audit.csv", "sources/sources.csv", "data/business-questions.csv",
+         "business-goals/scorecard-template.csv", "business-goals/atlas-example.csv"]
 
 
 def edit_rows(name, change):
@@ -36,6 +37,20 @@ def set_cell(name, row, col, value):
     return edit_rows(name, change)
 
 
+def regenerate_template(d):
+    """Rebuild the derived template after a planted change, as an author would with tools/build_scorecard.py."""
+    _, metrics = check_data.read(d / "data/metrics.csv")
+    _, questions = check_data.read(d / "data/business-questions.csv")
+    with open(d / "business-goals/scorecard-template.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(check_data.TEMPLATE_COLUMNS)
+        w.writerows(check_data.scorecard_rows(metrics, questions))
+
+
+def drop_metric_from_questions(mid):
+    return edit_rows("business-questions.csv", lambda r: [x.__setitem__(3, ";".join(i for i in x[3].split(";") if i != mid)) for x in r[1:]])
+
+
 # The id of the last metric in the file, so a fixture deletes a row by identity, not by position.
 with open(ROOT / "data/metrics.csv", newline="", encoding="utf-8") as _f:
     LAST = list(csv.reader(_f))[-1][0]
@@ -46,12 +61,15 @@ FAULTS = {
     "r02": ("a metric deleted along with its links and audit row", lambda d: (
              edit_rows("metrics.csv", lambda r: r.pop())(d),
              edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == LAST]])(d),
-             edit_rows("metric-audit.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == LAST]])(d))),
+             edit_rows("metric-audit.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == LAST]])(d),
+             drop_metric_from_questions(LAST)(d),
+             edit_rows("atlas-example.csv", lambda r: [r.remove(x) for x in [x for x in r if x[1] == LAST]])(d))),
     "r03": ("a row with an extra field", edit_rows("metrics.csv", lambda r: r[5].append("stray"))),
     "r04": ("a duplicated id, with its links renamed and its audit row removed", lambda d: (
              edit_rows("metrics.csv", lambda r: [x.__setitem__(0, "M01") for x in r if x[0] == "M13"])(d),
              edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [x.__setitem__(0, "M01") for x in r if x[0] == "M13"])(d),
-             edit_rows("metric-audit.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M13"]])(d))),
+             edit_rows("metric-audit.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M13"]])(d),
+             drop_metric_from_questions("M13")(d))),
     "r05": ("a duplicated name", set_cell("metrics.csv", 3, "name", "context precision")),
     "r06": ("a blank required field", set_cell("metrics.csv", 4, "pitfalls", "")),
     "r07": ("an area that does not exist", set_cell("metrics.csv", 5, "area", "Retrieval")),
@@ -70,6 +88,9 @@ FAULTS = {
     "r20": ("a characteristic that contradicts the crosswalk", set_cell("metrics.csv", 15, "characteristic", "valid_reliable")),
     "r21": ("an assessed row citing a source that is not registered", set_cell("metric-audit.csv", 7, "sources", "S03;S99")),
     "r22": ("a source registered twice under one id", set_cell("sources.csv", 16, "id", "S15")),
+    "r23": ("a question naming a metric that does not exist", set_cell("business-questions.csv", 1, "metric_ids", "M41;M38;M99")),
+    "r24": ("a hand edit to the generated template", set_cell("scorecard-template.csv", 1, "card_target", "≥ 0.5")),
+    "r25": ("an example row with a status outside the scale", set_cell("atlas-example.csv", 1, "status", "great")),
     "r16": ("a metric's only link deleted", edit_rows("nist-ai-rmf-crosswalk.csv", lambda r: [r.remove(x) for x in [x for x in r if x[0] == "M11"]])),
 }
 
@@ -90,6 +111,8 @@ def main():
                 (d / f).parent.mkdir(exist_ok=True)
                 shutil.copy(ROOT / f, d / f)
             plant(d)
+            if rid != "r24":
+                regenerate_template(d)
             fired = {r for r, _ in check_data.check(d)}
             without = check_data.check(d, disabled={rid})
         caught, missed = rid in fired, not without

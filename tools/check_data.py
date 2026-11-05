@@ -55,6 +55,17 @@ TOOLKIT_USE_CASES = {
     "retrieval-pipeline", "runtime-monitoring", "agent-observability",
 }
 
+QUESTION_COLUMNS = ["id", "goal", "question", "metric_ids", "how_the_metrics_answer"]
+# The scorecard template is derived from metrics.csv and business-questions.csv by
+# tools/build_scorecard.py; rule r24 checks the file on disk still matches.
+TEMPLATE_COLUMNS = [
+    "tier", "metric_id", "metric_name", "area", "characteristic", "answers_questions", "card_target",
+    "system_target", "current_value", "owner", "review_cadence", "notes",
+]
+ATLAS_COLUMNS = ["question_id", "metric_id", "metric_name", "system_target", "current_value", "status",
+                 "owner", "review_cadence", "notes"]
+ATLAS_STATUSES = {"on track", "watch", "off track"}
+
 
 def read(path):
     with open(path, newline="", encoding="utf-8") as f:
@@ -337,12 +348,85 @@ def r22_sources_registry(d):
             yield f"sources.csv line {i}: kind {r.get('kind')!r} is not one of {sorted(SOURCE_KINDS)}"
 
 
+
+def scorecard_rows(metrics, questions):
+    """The scorecard template, derived: Foundational metrics first, the planning columns left empty."""
+    asked = {}
+    for q in questions:
+        for mid in q.get("metric_ids", "").split(";"):
+            asked.setdefault(mid, []).append(q.get("id", ""))
+    order = {t: i for i, t in enumerate(["Foundational", "Intermediate", "Advanced"])}
+    rows = sorted(metrics, key=lambda r: (order.get(r.get("tier"), 9), int(r.get("id", "M0")[1:] or 0)))
+    return [[r.get("tier", ""), r.get("id", ""), r.get("name", ""), r.get("area", ""), r.get("characteristic", ""),
+             ";".join(asked.get(r.get("id"), [])), r.get("healthy_target", ""), "", "", "", "", ""] for r in rows]
+
+
+def r23_business_questions(d):
+    """Every question is well formed and names real metrics, and every metric answers at least one question."""
+    if d["qh"] != QUESTION_COLUMNS:
+        yield f"business-questions.csv header is {d['qh']}, expected {QUESTION_COLUMNS}"
+        return
+    metrics = {r.get("id") for r in d["m"]}
+    seen, answered = set(), set()
+    for i, q in enumerate(d["q"], 2):
+        qid = q.get("id", "")
+        if not re.fullmatch(r"Q\d{2,}", qid) or qid in seen:
+            yield f"business-questions.csv line {i}: id {qid!r} is malformed or used twice"
+        seen.add(qid)
+        if q.get("goal") not in GOALS:
+            yield f"business-questions.csv line {i}: goal {q.get('goal')!r} is not one of {sorted(GOALS)}"
+        ids = [x for x in q.get("metric_ids", "").split(";") if x]
+        if not ids or len(ids) != len(set(ids)):
+            yield f"business-questions.csv line {i}: metric_ids is empty or names a metric twice"
+        for mid in ids:
+            if mid not in metrics:
+                yield f"business-questions.csv line {i}: {mid} is not a metric in metrics.csv"
+            answered.add(mid)
+    for mid in sorted(metrics - answered, key=lambda x: int(x[1:] or 0)):
+        yield f"{mid} answers no question in business-questions.csv"
+
+
+def r24_scorecard_template(d):
+    """The template on disk must equal the one derived from the data (run tools/build_scorecard.py)."""
+    if d["th"] != TEMPLATE_COLUMNS:
+        yield f"scorecard-template.csv header is {d['th']}, expected {TEMPLATE_COLUMNS}"
+        return
+    expected = scorecard_rows(d["m"], d["q"])
+    actual = [[r.get(c, "") for c in TEMPLATE_COLUMNS] for r in d["t"]]
+    if len(actual) != len(expected):
+        yield f"scorecard-template.csv has {len(actual)} rows, the data gives {len(expected)}: run tools/build_scorecard.py"
+        return
+    for i, (a, e) in enumerate(zip(actual, expected), 2):
+        if a != e:
+            yield f"scorecard-template.csv line {i} ({a[1]}) differs from the data: run tools/build_scorecard.py"
+
+
+def r25_atlas_example(d):
+    """The worked example names real metrics under their current names, under a question that lists them."""
+    if d["eh"] != ATLAS_COLUMNS:
+        yield f"atlas-example.csv header is {d['eh']}, expected {ATLAS_COLUMNS}"
+        return
+    ids = [r.get("id") for r in d["m"]]
+    names = {r.get("id"): r.get("name") for r in d["m"] if ids.count(r.get("id")) == 1}  # duplicates are r04's job
+    asks = {q.get("id"): set(q.get("metric_ids", "").split(";")) for q in d["q"]}
+    for i, r in enumerate(d["e"], 2):
+        mid, qid = r.get("metric_id"), r.get("question_id")
+        if mid not in ids:
+            yield f"atlas-example.csv line {i}: {mid} is not a metric in metrics.csv"
+        elif mid in names and r.get("metric_name") != names[mid]:
+            yield f"atlas-example.csv line {i}: {mid} is named {r.get('metric_name')!r}, metrics.csv says {names[mid]!r}"
+        if mid not in asks.get(qid, set()):
+            yield f"atlas-example.csv line {i}: question {qid} does not list {mid}"
+        if r.get("status") not in ATLAS_STATUSES:
+            yield f"atlas-example.csv line {i}: status {r.get('status')!r} is not one of {sorted(ATLAS_STATUSES)}"
+
+
 RULES = {f.__name__.split("_")[0]: f for f in (
     r01_headers, r02_row_counts, r03_row_width, r04_ids, r05_unique_names, r06_required_fields,
     r07_area_known, r08_goal_and_tier, r09_areas_used_or_known_gaps, r10_toolkit_use_cases, r11_clean_whitespace,
     r12_nist_table, r13_crosswalk_references, r14_crosswalk_values, r15_crosswalk_duplicates, r16_every_metric_mapped,
     r17_quotes_verbatim, r18_characteristics, r19_measurement_methods, r20_characteristic_matches_crosswalk,
-    r21_metric_audit, r22_sources_registry,
+    r21_metric_audit, r22_sources_registry, r23_business_questions, r24_scorecard_template, r25_atlas_example,
 )}
 
 
@@ -356,6 +440,9 @@ def check(root, disabled=()):
     d["xh"], d["x"] = read(root / "crosswalk/nist-ai-rmf-crosswalk.csv")
     d["ah"], d["a"] = read(root / "data/metric-audit.csv")
     d["sh"], d["s"] = read(root / "sources/sources.csv")
+    d["qh"], d["q"] = read(root / "data/business-questions.csv")
+    d["th"], d["t"] = read(root / "business-goals/scorecard-template.csv")
+    d["eh"], d["e"] = read(root / "business-goals/atlas-example.csv")
     with open(root / "sources/NIST-AI-RMF-Playbook.json", encoding="utf-8") as f:
         d["playbook"] = {x["title"].strip(): x for x in json.load(f)}
     # Words split across lines in the PDF text are rejoined before matching.

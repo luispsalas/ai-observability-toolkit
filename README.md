@@ -5,7 +5,7 @@
 **Metrics and observability for AI systems, worked through real use cases: what to watch, how to read it, and what to do when no single score says whether the answer was right.**
 
 > [!NOTE]
-> **Work in progress.** 2 of 13 items are available today. The other 11 are listed below with their status, so you can see where the toolkit is going. Each available item stands on its own.
+> **Work in progress.** 3 of 13 items are available today. The other 10 are listed below with their status, so you can see where the toolkit is going. Each available item stands on its own.
 
 ## At a glance
 
@@ -29,7 +29,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 | NIST Generative AI Profile crosswalk | Extends the NIST crosswalk to the twelve risks NIST's Generative AI Profile (AI 600-1) adds for generative systems, such as confabulation and harmful content, where content safety metrics belong | planned |
 | EU AI Act crosswalk | Maps the metrics, and the records a system has to keep, to the AI Act's obligations by role (provider or deployer) and risk category, quoting each article from the official text. It shows which duties call for a record rather than a metric, and when each duty applies | planned |
 | Data quality dimensions for AI | Starts from the classic dimensions (accuracy, completeness, consistency, timeliness, validity) and shows what changes for each when the system's output is generated | planned |
-| Metrics and business goals | Links each metric to the business question it answers, so a dashboard can be read by the people who fund the system | planned |
+| [**Metrics and business goals**](business-goals/) | Starts from the questions the people who fund a system ask, links each to the metrics that answer it, and turns them into a scorecard with an owner, a target and a review cadence per metric, with a labeled fictional example | **available** |
 | Improving what can't be graded | How to make an AI system better when its output has no exact score, using the way a professional editor improves a book as the model | planned |
 
 ### Use cases
@@ -59,7 +59,7 @@ Traditional data quality and software testing assume that the same input gives t
 python3 tools/test_check_data.py
 ```
 
-This proves the checker works: each of its 22 rules must catch a planted error, and miss it when switched off. It should end with `ALL PASSED`. Then check the data and the crosswalk:
+This proves the checker works: each of its 25 rules must catch a planted error, and miss it when switched off. It should end with `ALL PASSED`. Then check the data and the crosswalk:
 
 ```bash
 python3 tools/check_data.py
@@ -70,10 +70,11 @@ Python 3, standard library only. The data is plain CSV, so it opens in any sprea
 ## Repository map
 
 ```
-data/       metrics.csv (45 metrics), areas.csv (6 areas), metric-audit.csv, nist-ai-rmf.csv (72 subcategories)
+data/       metrics.csv (45 metrics), areas.csv (6 areas), business-questions.csv (15 questions), metric-audit.csv, nist-ai-rmf.csv (72 subcategories)
+business-goals/  questions to metrics to scorecard: a README, the generated scorecard template and the Atlas example
 crosswalk/  the NIST AI RMF crosswalk: one CSV of links and a README with findings
 sources/    the NIST AI RMF 1.0 and its Playbook, with citations and how their text was checked
-tools/      check_data.py (22 rules) and its tests, the NIST extractor, the summary generator
+tools/      check_data.py (25 rules) and its tests, the NIST extractor, the summary and scorecard generators
 assets/     the banner
 ```
 

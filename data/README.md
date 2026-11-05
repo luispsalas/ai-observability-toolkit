@@ -16,6 +16,7 @@
 | `metrics.csv` | One row per metric, 17 columns (below) |
 | `areas.csv` | The 6 areas in display order, with a description of each and whether it is a known gap |
 | `metric-audit.csv` | The audit result for each metric: `pending`, `assessed` (with its outcome: keep, revise, split, merge or retire) or `proposed` (a split, merge or retirement awaiting a decision), with the reason, the sources (ids in [`../sources/sources.csv`](../sources/sources.csv)) and the date |
+| `business-questions.csv` | 15 questions grouped by business goal, each with the metrics that answer it. Used by [Metrics and business goals](../business-goals/) |
 | `nist-ai-rmf.csv` | The 19 categories and 72 subcategories of the NIST AI RMF 1.0, verbatim, extracted from [the PDF](../sources/) by `tools/extract_nist_rmf.py`. Used by the [crosswalk](../crosswalk/). |
 
 ## How the metrics are organized
@@ -76,4 +77,4 @@ python3 tools/test_check_data.py
 python3 tools/check_data.py
 ```
 
-The first command proves the checker works. Each of its 22 rules must catch a planted error and miss it when switched off, and the run ends with `ALL PASSED`. The second checks the data and the crosswalk, including that every area and method is one of the allowed values, that an area is empty only when marked as a known gap, that a metric's characteristic agrees with its primary links in the crosswalk, and that every audit result cites registered sources. Run both after any edit.
+The first command proves the checker works. Each of its 25 rules must catch a planted error and miss it when switched off, and the run ends with `ALL PASSED`. The second checks the data and the crosswalk, including that every area and method is one of the allowed values, that an area is empty only when marked as a known gap, that a metric's characteristic agrees with its primary links in the crosswalk, and that every audit result cites registered sources. Run both after any edit.
