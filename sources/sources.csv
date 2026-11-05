@@ -55,3 +55,8 @@ S53,Quantifying Language Models' Sensitivity to Spurious Features in Prompt Desi
 S54,"promptfoo README (now part of OpenAI, still open source)",promptfoo/promptfoo,2026,github:promptfoo/promptfoo,https://github.com/promptfoo/promptfoo,documentation
 S55,LLM Guard README (archive notice),Protect AI (protectai/llm-guard),2026,github:protectai/llm-guard,https://github.com/protectai/llm-guard,documentation
 S56,"Perspective API sunset announcement (service active until December 31, 2026)",Jigsaw (Google),2026,perspectiveapi.com,https://perspectiveapi.com/,documentation
+S57,Site Reliability Engineering: Monitoring Distributed Systems (the four golden signals),Rob Ewaschuk (Google),2017,sre.google/sre-book/monitoring-distributed-systems,https://sre.google/sre-book/monitoring-distributed-systems/,documentation
+S58,Site Reliability Engineering: Service Level Objectives,Chris Jones et al. (Google),2017,sre.google/sre-book/service-level-objectives,https://sre.google/sre-book/service-level-objectives/,documentation
+S59,OpenTelemetry semantic conventions for generative AI metrics and inference token metrics (status: Development),OpenTelemetry (open-telemetry/semantic-conventions-genai),2026,"github:open-telemetry/semantic-conventions-genai docs/gen-ai/gen-ai-metrics.md, gen-ai-token-metrics.md",https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-metrics.md,documentation
+S60,DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving,Yinmin Zhong et al.,2024,arXiv:2401.09670,https://arxiv.org/abs/2401.09670,preprint
+S61,tiktoken README (a BPE tokeniser for use with OpenAI's models),openai/tiktoken,2026,github:openai/tiktoken,https://github.com/openai/tiktoken,documentation

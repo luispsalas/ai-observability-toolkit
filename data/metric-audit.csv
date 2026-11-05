@@ -16,9 +16,9 @@ M14,assessed,merge,"Accepted by the user 2026-10-26. As defined it was the compl
 M15,assessed,revise,"Perspective API, the card's first tool, stops working after December 31, 2026 per its own site, and LLM Guard is archived. The rate depends on the classifier, its threshold and the prompts (RealToxicityPrompts), so all three are now stated. The MEASURE 2.6 link stays uncertain until Phase C maps the Generative AI Profile.",S56;S55;S48;S52,2026-10-27
 M16,assessed,revise,"Violations are now counted per policy category, by a classifier that can take the system's own taxonomy (Llama Guard) or by human review, so measurement_method gained 'human_rating'. Attack success under red teaming is a separate question, with standardized sets such as HarmBench.",S52;S51;S55,2026-10-27
 M17,assessed,split,"Accepted by the user 2026-10-27. M17 stays refusal of unsafe requests; over-refusal of safe prompts that resemble unsafe ones, which XSTest and OR-Bench show is a systematic failure needing its own test set, is added as M46.",S49;S50,2026-10-27
-M18,pending,,,,
-M19,pending,,,,
-M20,pending,,,,
+M18,assessed,revise,"Google's SRE book (four golden signals) says to separate the latency of successful and failed requests, and to set targets as service level objectives rather than from current performance, so the P95 range became a per-system target. For streamed LLM output, latency splits into time to first token and time per output token (DistServe), which OpenTelemetry's generative AI metrics record separately, still at Development status.",S57;S58;S59;S60,2026-11-04
+M19,assessed,revise,"OpenTelemetry's inference token metrics count input, cached input and reasoning output tokens separately, because they behave and are priced differently; the card now records them apart. tiktoken is a tokenizer for OpenAI's models only, so counts from it do not transfer to other models. The MEASURE 2.12 link stays an uncertain proxy.",S59;S61,2026-11-04
+M20,assessed,revise,"The formula now states which costs it includes, and for agents asks for cost per completed task, since one request can hide many model calls. Kapoor et al. argue agent accuracy should be reported jointly with cost. Helicone is maintained.",S40,2026-11-04
 M21,assessed,split,"Accepted by the user 2026-10-27. M21 stays execution success (does the call run without error), counted from traces; correctness of the call (right tool, right arguments, no call when none is needed) is added as M45, following the Berkeley Function-Calling Leaderboard, which evaluates call correctness and relevance detection separately. OpenTelemetry's agent spans are still at Development status.",S43;S44,2026-10-27
 M22,assessed,revise,"Success now judged on the end state where possible (τ-bench) and over repeated runs, since τ-bench's pass^k shows single runs overstate reliability; Kapoor et al. show agent accuracy should be reported with cost. An end-state check is deterministic, so measurement_method gained 'deterministic'.",S39;S40,2026-10-27
 M23,assessed,revise,"A deterministic log can show that a handoff happened, not that the receiver got the right task and context, which is where multi-agent systems fail (MAST: inter-agent misalignment is one of three failure categories, with an LLM judge validated against human annotation). measurement_method gained 'llm_judge'. AutoGen is archived; Microsoft points users to Microsoft Agent Framework.",S41;S44;S45,2026-10-27
@@ -33,12 +33,12 @@ M31,assessed,revise,"The ratio depends on the lineage level, which the card did 
 M32,pending,,,,
 M33,pending,,,,
 M34,assessed,revise,"'Statistical divergence' named no method. The card now names PSI, KS and Wasserstein per feature type, and, for text or embedding inputs, a two-sample test on reduced representations, which performed best in Rabanser et al. The PSI target had no source: the common cutoffs are rules of thumb used without stated error rates (Yurdakul 2018), so the target is set per system. whylogs has had no updates since January 2025.",S29;S37,2026-10-27
-M35,pending,,,,
-M36,pending,,,,
+M35,assessed,revise,Google's SRE book defines availability either by time or as the fraction of well-formed requests that succeed (yield); the card now names both. The fixed 99.9% target became a service level objective with an error budget.,S58,2026-11-04
+M36,assessed,revise,"Google's SRE book counts errors as explicit, implicit (a success code with wrong content) or by policy (too slow); the card's pitfall already noted silent failures, and the calculation now counts all three, reported separately. The 1% target became per system.",S57;S58,2026-11-04
 M37,pending,,,,
 M38,pending,,,,
 M39,pending,,,,
-M40,pending,,,,
+M40,assessed,revise,"Time to first token is the prefill side of a trade-off with time per output token (DistServe), so both get targets. OpenTelemetry defines a server metric for it, recorded for successful responses only, at Development status. The 1-second target became per use case.",S60;S59,2026-11-04
 M41,pending,,,,
 M42,pending,,,,
 M43,assessed,keep,"Added 2026-10-26 by the split of M10, defined as citation recall in the ALCE paper.",S04;S11,2026-10-26
