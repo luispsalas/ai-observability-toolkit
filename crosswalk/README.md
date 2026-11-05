@@ -1,6 +1,6 @@
 # NIST AI RMF crosswalk
 
-The toolkit's 45 metrics mapped onto the 72 subcategories of the NIST AI Risk Management Framework (AI RMF 1.0). It shows where each metric can serve as evidence for the framework, and where the framework asks for something no metric in the catalog provides.
+The toolkit's 45 metrics mapped onto the 72 subcategories of the AI Risk Management Framework (AI RMF 1.0) of the US National Institute of Standards and Technology (NIST). It shows where each metric can serve as evidence for the framework, and where the framework asks for something no metric in the catalog provides.
 
 **Files:** [`nist-ai-rmf-crosswalk.csv`](nist-ai-rmf-crosswalk.csv) (88 links, one row per metric and subcategory) · [`../data/nist-ai-rmf.csv`](../data/nist-ai-rmf.csv) (the framework's 19 categories and 72 subcategories, verbatim) · [`../data/metrics.csv`](../data/metrics.csv) (the metrics) · [the framework itself](../sources/)
 

@@ -4,7 +4,7 @@
 
 ## What this does not do (read first)
 
-- **The audit reflects research and tools as of its date.** The metrics came over from the [AI Metrics Catalog](https://luispsalas.github.io/ai-governance-scorecard/) (last updated August 2026). Their structure, formulas, targets and wording were reviewed in October 2026, and each was then checked against current research and tools in October and November 2026. [`metric-audit.csv`](metric-audit.csv) records the result, sources and date for all 45 (plus M14, which was merged into M07 and retired). Tools in this area change quickly, so read each row's date. Alignment with standards beyond the NIST AI RMF 1.0 is still planned.
+- **The audit reflects research and tools as of its date.** The metrics came over from the [AI Metrics Catalog](https://luispsalas.github.io/ai-governance-scorecard/) (last updated August 2026). Their structure, formulas, targets and wording were reviewed in October 2026, and each was then checked against current research and tools in October and November 2026. [`metric-audit.csv`](metric-audit.csv) records the result, sources and date for all 45 (plus M14, which was merged into M07 and retired). Tools in this area change quickly, so read each row's date. Alignment with standards beyond the AI Risk Management Framework (AI RMF 1.0) of the US National Institute of Standards and Technology (NIST) is still planned.
 - **Healthy targets are rules of thumb.** They suit a typical deployment and need to be set again for each system. Where no general number makes sense, the target says "Set per system" and gives the rule for setting it.
 - **26 of the 45 metrics rest on a judgment.** Their formulas count things ("supported claims ÷ total claims"), but deciding what counts is done by an AI judge or a human rater. The `measurement_method` column says which, so read those scores as judgments with their own error.
 - **The `toolkit_use_cases` column is empty for now.** It fills in as the use cases are written.
@@ -21,7 +21,7 @@
 
 ## How the metrics are organized
 
-Each metric sits in **one area**, chosen by the part of the AI system it measures. Five of the six areas take their names from the [OECD Framework for the Classification of AI Systems](https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html) (2022), which the NIST AI RMF adapts for its view of the AI lifecycle. The sixth covers the running service, which those frameworks do not separate out.
+Each metric sits in **one area**, chosen by the part of the AI system it measures. Five of the six areas take their names from the Organisation for Economic Co-operation and Development's [OECD Framework for the Classification of AI Systems](https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html) (2022), which the NIST AI RMF adapts for its view of the AI lifecycle. The sixth covers the running service, which those frameworks do not separate out.
 
 | Area | What it covers | Metrics |
 |---|---|---|

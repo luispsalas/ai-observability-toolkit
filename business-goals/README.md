@@ -72,8 +72,8 @@ The template is generated from the data by `tools/build_scorecard.py`, so it cha
 
 The columns separate the team that measures a metric from the person accountable for its target, because the sources ask for both:
 
-- The NIST AI Risk Management Framework asks that roles for measuring AI risk be documented and clear "to individuals and teams throughout the organization" (GOVERN 2.1). Its Playbook adds that accountability "ensures that a specific team and individual is responsible" (GOVERN 2.3).
-- Google's SRE workbook says a reliability target "needs to be owned by someone in the organization who is empowered to make tradeoffs", usually the product owner. It asks each target's record to name who approved it, when, and when it will next be reviewed. ([Implementing SLOs](https://sre.google/workbook/implementing-slos/), where SLO stands for service level objective.)
+- The AI Risk Management Framework of the US National Institute of Standards and Technology (NIST) asks that roles for measuring AI risk be documented and clear "to individuals and teams throughout the organization" (GOVERN 2.1). Its Playbook adds that accountability "ensures that a specific team and individual is responsible" (GOVERN 2.3).
+- Google's Site Reliability Engineering (SRE) workbook says a reliability target "needs to be owned by someone in the organization who is empowered to make tradeoffs", usually the product owner. It asks each target's record to name who approved it, when, and when it will next be reviewed. ([Implementing SLOs](https://sre.google/workbook/implementing-slos/), where SLO stands for service level objective.)
 - For high-risk systems, the European Union's AI Act requires deployers to "assign human oversight to natural persons who have the necessary competence, training and authority" ([Article 26(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689)). That makes accountability for oversight metrics, such as human override rate (M37), a named person's by law.
 
 None of them says every metric needs its own person. One person can be accountable for several metrics, as long as they have the authority to act on each.
