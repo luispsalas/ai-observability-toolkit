@@ -5,7 +5,7 @@
 **Metrics and observability for AI systems, worked through real use cases: what to watch, how to read it, and what to do when no single score says whether the answer was right.**
 
 > [!NOTE]
-> **Work in progress.** 2 of 11 items are available today. The other 9 are listed below with their status, so you can see where the toolkit is going. Each available item stands on its own.
+> **Work in progress.** 2 of 13 items are available today. The other 11 are listed below with their status, so you can see where the toolkit is going. Each available item stands on its own.
 
 ## At a glance
 
@@ -26,6 +26,8 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 |---|---|---|
 | [**Metric catalog data**](data/) | The AI Metrics Catalog's metrics as one data file (45 after the audit so far), each placed in an area of the AI system, tagged with the NIST characteristic it gives evidence for and with how it is measured | **available** |
 | [**NIST AI RMF crosswalk**](crosswalk/) | Maps the metrics to the framework's four functions (Govern, Map, Measure, Manage) and shows where the framework asks for evidence no metric provides | **available** |
+| NIST Generative AI Profile crosswalk | Extends the NIST crosswalk to the twelve risks NIST's Generative AI Profile (AI 600-1) adds for generative systems, such as confabulation and harmful content, where content safety metrics belong | planned |
+| EU AI Act crosswalk | Maps the metrics, and the records a system has to keep, to the AI Act's obligations by role (provider or deployer) and risk category, quoting each article from the official text. It shows which duties call for a record rather than a metric, and when each duty applies | planned |
 | Data quality dimensions for AI | Starts from the classic dimensions (accuracy, completeness, consistency, timeliness, validity) and shows what changes for each when the system's output is generated | planned |
 | Metrics and business goals | Links each metric to the business question it answers, so a dashboard can be read by the people who fund the system | planned |
 | Improving what can't be graded | How to make an AI system better when its output has no exact score, using the way a professional editor improves a book as the model | planned |
