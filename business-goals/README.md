@@ -20,7 +20,7 @@ A dashboard of 45 metric names is hard to read for anyone outside the team that 
 3. **Copy the [scorecard template](scorecard-template.csv)** into a spreadsheet and keep the rows you chose. For each, write the target you set for your system and when it was approved, the team that measures it, the person accountable for it, and the date of its next review.
 4. **Review by that date**, record the current value and a note on what changed, and set the next date.
 
-There is no recommended number of metrics. The old catalog suggested 20 to 25, a figure tied to a layer scheme the toolkit no longer uses and backed by no source. The 17 Foundational metrics are a reasonable first set, and the questions decide what comes next.
+There is no recommended number of metrics. The 17 Foundational metrics are a reasonable first set, and the questions decide what comes next.
 
 ## Questions and the metrics that answer them
 
