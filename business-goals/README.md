@@ -11,7 +11,7 @@ Start from the question you need answered, find the metrics that answer it, and 
 
 ## Why it matters
 
-A dashboard of 45 metric names is hard to read for anyone outside the team that built the system, and hard to act on for anyone inside it. Starting from a question does three things. It limits the scorecard to metrics someone will use, it gives each metric a reader, and it makes clear when a number is good enough. The old AI Metrics Catalog had a short goal-to-questions table and a fill-in template, and both were among the things that worked. This page brings them back, built on the audited metrics.
+A dashboard of 45 metric names is hard to read for anyone outside the team that built the system, and hard to act on for anyone inside it. Starting from a question does three things. It limits the scorecard to metrics someone will use, it gives each metric a reader, and it makes clear when a number is good enough.
 
 ## How to use it
 

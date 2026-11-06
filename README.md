@@ -24,7 +24,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 
 | Item | What it does | Status |
 |---|---|---|
-| [**Metric catalog data**](data/) | The AI Metrics Catalog's metrics as one data file (45 after the audit), each placed in an area of the AI system, tagged with the trustworthiness characteristic it gives evidence for, as defined by NIST (the US National Institute of Standards and Technology), and with how it is measured | **available** |
+| [**Metric catalog data**](data/) | The toolkit's 45 metrics as one data file, each placed in an area of the AI system, tagged with the trustworthiness characteristic it gives evidence for, as defined by NIST (the US National Institute of Standards and Technology), and with how it is measured | **available** |
 | [**NIST AI RMF crosswalk**](crosswalk/) | Maps the metrics to NIST's AI Risk Management Framework (AI RMF 1.0) and its four functions (Govern, Map, Measure, Manage) and shows where the framework asks for evidence no metric provides | **available** |
 | NIST Generative AI Profile crosswalk | Extends the NIST crosswalk to the twelve risks NIST's Generative AI Profile (AI 600-1) adds for generative systems, such as confabulation and harmful content, where content safety metrics belong | planned |
 | EU AI Act crosswalk | Maps the metrics, and the records a system has to keep, to the obligations of the European Union's AI Act by role (provider or deployer) and risk category, quoting each article from the official text. It shows which duties call for a record rather than a metric, and when each duty applies | planned |
