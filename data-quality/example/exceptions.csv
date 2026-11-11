@@ -1,0 +1,8 @@
+id,dataset,consumers,opened,closed,tier_before,worst,ack,agreed_days,cause,real
+EX-01,sales_orders,E P,8,10,Tier 1,Tier 3,8,1,Upstream order system changed its export path; load job pointed at the old one,True
+EX-02,daily_revenue_summary,E,9,10,Tier 1,Tier 2,9,3,Halted on purpose while its source table was stale,True
+EX-03,price_list,E A P,15,16,Tier 1,Tier 3,15,1,Currency conversion applied twice to one supplier file,True
+EX-04,customers,E A P,18,,Tier 1,Tier 2,20,3,,
+EX-05,sales_forecast_features,A,22,,Tier 1,Tier 2,23,3,,
+EX-06,returns,P H,25,26,Tier 1,Tier 2,25,3,"Rule compared against a deprecated status code; rule fixed, data was fine",False
+EX-07,store_targets,E,27,29,Tier 1,Tier 3,27,1,Owner changed role; regional sales director named as the new owner,True

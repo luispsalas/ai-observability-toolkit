@@ -1,0 +1,14 @@
+dataset,consumers,owner,steward,agreed_lag_hours,critical_elements,elements_with_rule,rules,certified_definitions,lineage_recorded
+daily_revenue_summary,E,Finance reporting lead,Sales data steward,24,8,8,12,8,True
+sales_orders,E P,Order management lead,Sales data steward,24,14,14,18,14,True
+sales_order_lines,E P,Order management lead,Sales data steward,24,10,10,14,10,True
+store_targets,E,Regional sales director,Sales data steward,168,6,6,7,6,True
+sales_forecast_features,A,Forecasting lead,Analytics data steward,24,16,16,22,16,True
+assistant_policy_index,A,Sales operations lead,Knowledge steward,168,5,5,6,5,True
+customers,E A P,Customer data lead,Customer data steward,24,12,12,16,12,True
+price_list,E A P,Pricing lead,Sales data steward,24,6,6,9,6,True
+products,P,Product data lead,Product data steward,24,9,9,11,9,True
+returns,P H,Order management lead,Sales data steward,24,7,7,8,7,True
+crm_accounts,H,Sales operations lead,Customer data steward,24,14,14,15,10,True
+rep_quota,H,Sales operations lead,Sales data steward,168,6,5,6,6,True
+promotions,P H,Marketing operations lead,Sales data steward,24,9,9,10,7,False

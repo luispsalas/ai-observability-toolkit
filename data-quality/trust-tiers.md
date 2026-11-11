@@ -2,6 +2,8 @@
 
 A way to decide, every day, whether a dataset is fit to feed reporting and AI, to explain that decision in one sentence, and to act when it changes. Each dataset gets a score from a few signals, the score and a set of hard conditions place it in a tier, a drop in tier starts an agreed escalation, and two views report the result: a daily list of exceptions for the people who fix data, and a short risk-indicator report for leadership.
 
+A [worked example on synthetic data](example/) shows the design running for a month in a reporting context.
+
 ## What this does not do (read first)
 
 - **It is a design. Nothing real has run through it yet.** The weights and thresholds below are starting points with a stated reason, not values tested on data. They are marked *uncertain* until a lab or a real system has produced evidence for them. The planned test is a trust score lab on a small data platform, scored daily on one domain.

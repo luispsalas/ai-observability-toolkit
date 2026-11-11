@@ -1,0 +1,557 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="994" height="406" viewBox="0 0 994 406" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="0.5" y="0.5" width="993" height="405" rx="10" fill="#fcfcfb" stroke="#e4e3df"/>
+<text x="20" y="30" font-size="16" font-weight="600" fill="#0b0b0b">Trust Tier of each dataset, day by day</text>
+<text x="20" y="49" font-size="12" fill="#52514e">Synthetic data for a fictional Sales domain. Datasets that feed an executive report or an AI system are listed first.</text>
+<text x="362" y="72" font-size="10" fill="#52514e" text-anchor="end">Day</text>
+<text x="379.0" y="72" font-size="10" fill="#52514e" text-anchor="middle">1</text>
+<text x="459.0" y="72" font-size="10" fill="#52514e" text-anchor="middle">5</text>
+<text x="559.0" y="72" font-size="10" fill="#52514e" text-anchor="middle">10</text>
+<text x="659.0" y="72" font-size="10" fill="#52514e" text-anchor="middle">15</text>
+<text x="759.0" y="72" font-size="10" fill="#52514e" text-anchor="middle">20</text>
+<text x="859.0" y="72" font-size="10" fill="#52514e" text-anchor="middle">25</text>
+<text x="959.0" y="72" font-size="10" fill="#52514e" text-anchor="middle">30</text>
+<text x="20" y="89" font-size="12" fill="#0b0b0b">daily_revenue_summary</text>
+<text x="362" y="89" font-size="10" fill="#52514e" text-anchor="end">executive report</text>
+<rect x="370" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="76" width="18" height="18" rx="3" fill="#fab219"><title>daily_revenue_summary, day 9: Tier 2 because last load 30 hours ago against an agreed 24</title></rect>
+<text x="539.0" y="89" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="550" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 25: Tier 1: every condition met</title></rect>
+<rect x="870" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 27: Tier 1: every condition met</title></rect>
+<rect x="910" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 28: Tier 1: every condition met</title></rect>
+<rect x="930" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="76" width="18" height="18" rx="3" fill="#0ca30c"><title>daily_revenue_summary, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="109" font-size="12" fill="#0b0b0b">sales_orders</text>
+<text x="362" y="109" font-size="10" fill="#52514e" text-anchor="end">executive report, pipelines</text>
+<rect x="370" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="96" width="18" height="18" rx="3" fill="#fab219"><title>sales_orders, day 8: Tier 2 because last load 30 hours ago against an agreed 24</title></rect>
+<text x="519.0" y="109" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="530" y="96" width="18" height="18" rx="3" fill="#d03b3b"><title>sales_orders, day 9: Tier 3 because last load 54 hours ago, more than twice the agreed 24</title></rect>
+<text x="539.0" y="109" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="550" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 25: Tier 1: every condition met</title></rect>
+<rect x="870" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 27: Tier 1: every condition met</title></rect>
+<rect x="910" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 28: Tier 1: every condition met</title></rect>
+<rect x="930" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="96" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_orders, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="129" font-size="12" fill="#0b0b0b">sales_order_lines</text>
+<text x="362" y="129" font-size="10" fill="#52514e" text-anchor="end">executive report, pipelines</text>
+<rect x="370" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 25: Tier 1: every condition met</title></rect>
+<rect x="870" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 27: Tier 1: every condition met</title></rect>
+<rect x="910" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 28: Tier 1: every condition met</title></rect>
+<rect x="930" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="116" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_order_lines, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="149" font-size="12" fill="#0b0b0b">store_targets</text>
+<text x="362" y="149" font-size="10" fill="#52514e" text-anchor="end">executive report</text>
+<rect x="370" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 25: Tier 1: every condition met</title></rect>
+<rect x="870" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="136" width="18" height="18" rx="3" fill="#d03b3b"><title>store_targets, day 27: Tier 3 because no owner assigned</title></rect>
+<text x="899.0" y="149" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="910" y="136" width="18" height="18" rx="3" fill="#d03b3b"><title>store_targets, day 28: Tier 3 because no owner assigned</title></rect>
+<text x="919.0" y="149" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="930" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="136" width="18" height="18" rx="3" fill="#0ca30c"><title>store_targets, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="169" font-size="12" fill="#0b0b0b">sales_forecast_features</text>
+<text x="362" y="169" font-size="10" fill="#52514e" text-anchor="end">AI system</text>
+<rect x="370" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="156" width="18" height="18" rx="3" fill="#0ca30c"><title>sales_forecast_features, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 22: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="799.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="810" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 23: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="819.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="830" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 24: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="839.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="850" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 25: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="859.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="870" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 26: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="879.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="890" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 27: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="899.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="910" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 28: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="919.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="930" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 29: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="939.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="950" y="156" width="18" height="18" rx="3" fill="#fab219"><title>sales_forecast_features, day 30: Tier 2 because 1 of 22 rules on critical elements failed</title></rect>
+<text x="959.0" y="169" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<text x="20" y="189" font-size="12" fill="#0b0b0b">assistant_policy_index</text>
+<text x="362" y="189" font-size="10" fill="#52514e" text-anchor="end">AI system</text>
+<rect x="370" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 25: Tier 1: every condition met</title></rect>
+<rect x="870" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 27: Tier 1: every condition met</title></rect>
+<rect x="910" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 28: Tier 1: every condition met</title></rect>
+<rect x="930" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="176" width="18" height="18" rx="3" fill="#0ca30c"><title>assistant_policy_index, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="209" font-size="12" fill="#0b0b0b">customers</text>
+<text x="362" y="209" font-size="10" fill="#52514e" text-anchor="end">executive report, AI system, pipelines</text>
+<rect x="370" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="196" width="18" height="18" rx="3" fill="#0ca30c"><title>customers, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 18: Tier 2 because no steward assigned</title></rect>
+<text x="719.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="730" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 19: Tier 2 because no steward assigned</title></rect>
+<text x="739.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="750" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 20: Tier 2 because no steward assigned</title></rect>
+<text x="759.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="770" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 21: Tier 2 because no steward assigned</title></rect>
+<text x="779.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="790" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 22: Tier 2 because no steward assigned</title></rect>
+<text x="799.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="810" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 23: Tier 2 because no steward assigned</title></rect>
+<text x="819.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="830" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 24: Tier 2 because no steward assigned</title></rect>
+<text x="839.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="850" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 25: Tier 2 because no steward assigned</title></rect>
+<text x="859.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="870" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 26: Tier 2 because no steward assigned</title></rect>
+<text x="879.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="890" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 27: Tier 2 because no steward assigned</title></rect>
+<text x="899.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="910" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 28: Tier 2 because no steward assigned</title></rect>
+<text x="919.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="930" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 29: Tier 2 because no steward assigned</title></rect>
+<text x="939.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="950" y="196" width="18" height="18" rx="3" fill="#fab219"><title>customers, day 30: Tier 2 because no steward assigned</title></rect>
+<text x="959.0" y="209" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<text x="20" y="229" font-size="12" fill="#0b0b0b">price_list</text>
+<text x="362" y="229" font-size="10" fill="#52514e" text-anchor="end">executive report, AI system, pipelines</text>
+<rect x="370" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="216" width="18" height="18" rx="3" fill="#d03b3b"><title>price_list, day 15: Tier 3 because 1 blocking rule failed</title></rect>
+<text x="659.0" y="229" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="670" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 25: Tier 1: every condition met</title></rect>
+<rect x="870" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 27: Tier 1: every condition met</title></rect>
+<rect x="910" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 28: Tier 1: every condition met</title></rect>
+<rect x="930" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="216" width="18" height="18" rx="3" fill="#0ca30c"><title>price_list, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="249" font-size="12" fill="#0b0b0b">products</text>
+<text x="362" y="249" font-size="10" fill="#52514e" text-anchor="end">pipelines</text>
+<rect x="370" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 25: Tier 1: every condition met</title></rect>
+<rect x="870" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 27: Tier 1: every condition met</title></rect>
+<rect x="910" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 28: Tier 1: every condition met</title></rect>
+<rect x="930" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="236" width="18" height="18" rx="3" fill="#0ca30c"><title>products, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="269" font-size="12" fill="#0b0b0b">returns</text>
+<text x="362" y="269" font-size="10" fill="#52514e" text-anchor="end">pipelines, ad hoc</text>
+<rect x="370" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 1: Tier 1: every condition met</title></rect>
+<rect x="390" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 2: Tier 1: every condition met</title></rect>
+<rect x="410" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 3: Tier 1: every condition met</title></rect>
+<rect x="430" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 4: Tier 1: every condition met</title></rect>
+<rect x="450" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 5: Tier 1: every condition met</title></rect>
+<rect x="470" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 6: Tier 1: every condition met</title></rect>
+<rect x="490" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 7: Tier 1: every condition met</title></rect>
+<rect x="510" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 8: Tier 1: every condition met</title></rect>
+<rect x="530" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 9: Tier 1: every condition met</title></rect>
+<rect x="550" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 10: Tier 1: every condition met</title></rect>
+<rect x="570" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 11: Tier 1: every condition met</title></rect>
+<rect x="590" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 12: Tier 1: every condition met</title></rect>
+<rect x="610" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 13: Tier 1: every condition met</title></rect>
+<rect x="630" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 14: Tier 1: every condition met</title></rect>
+<rect x="650" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 15: Tier 1: every condition met</title></rect>
+<rect x="670" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 16: Tier 1: every condition met</title></rect>
+<rect x="690" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 17: Tier 1: every condition met</title></rect>
+<rect x="710" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 18: Tier 1: every condition met</title></rect>
+<rect x="730" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 19: Tier 1: every condition met</title></rect>
+<rect x="750" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 20: Tier 1: every condition met</title></rect>
+<rect x="770" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 21: Tier 1: every condition met</title></rect>
+<rect x="790" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 22: Tier 1: every condition met</title></rect>
+<rect x="810" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 23: Tier 1: every condition met</title></rect>
+<rect x="830" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 24: Tier 1: every condition met</title></rect>
+<rect x="850" y="256" width="18" height="18" rx="3" fill="#fab219"><title>returns, day 25: Tier 2 because 1 of 8 rules on critical elements failed</title></rect>
+<text x="859.0" y="269" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="870" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 26: Tier 1: every condition met</title></rect>
+<rect x="890" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 27: Tier 1: every condition met</title></rect>
+<rect x="910" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 28: Tier 1: every condition met</title></rect>
+<rect x="930" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 29: Tier 1: every condition met</title></rect>
+<rect x="950" y="256" width="18" height="18" rx="3" fill="#0ca30c"><title>returns, day 30: Tier 1: every condition met</title></rect>
+<text x="20" y="289" font-size="12" fill="#0b0b0b">crm_accounts</text>
+<text x="362" y="289" font-size="10" fill="#52514e" text-anchor="end">ad hoc</text>
+<rect x="370" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 1: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="379.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="390" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 2: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="399.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="410" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 3: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="419.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="430" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 4: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="439.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="450" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 5: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="459.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="470" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 6: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="479.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="490" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 7: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="499.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="510" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 8: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="519.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="530" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 9: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="539.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="550" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 10: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="559.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="570" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 11: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="579.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="590" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 12: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="599.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="610" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 13: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="619.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="630" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 14: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="639.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="650" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 15: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="659.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="670" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 16: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="679.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="690" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 17: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="699.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="710" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 18: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="719.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="730" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 19: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="739.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="750" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 20: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="759.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="770" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 21: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="779.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="790" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 22: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="799.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="810" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 23: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="819.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="830" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 24: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="839.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="850" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 25: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="859.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="870" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 26: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="879.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="890" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 27: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="899.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="910" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 28: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="919.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="930" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 29: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="939.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="950" y="276" width="18" height="18" rx="3" fill="#fab219"><title>crm_accounts, day 30: Tier 2 because 4 of 14 critical elements have no certified definition</title></rect>
+<text x="959.0" y="289" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<text x="20" y="309" font-size="12" fill="#0b0b0b">rep_quota</text>
+<text x="362" y="309" font-size="10" fill="#52514e" text-anchor="end">ad hoc</text>
+<rect x="370" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 1: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="379.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="390" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 2: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="399.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="410" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 3: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="419.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="430" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 4: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="439.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="450" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 5: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="459.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="470" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 6: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="479.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="490" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 7: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="499.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="510" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 8: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="519.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="530" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 9: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="539.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="550" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 10: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="559.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="570" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 11: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="579.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="590" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 12: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="599.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="610" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 13: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="619.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="630" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 14: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="639.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="650" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 15: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="659.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="670" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 16: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="679.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="690" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 17: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="699.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="710" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 18: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="719.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="730" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 19: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="739.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="750" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 20: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="759.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="770" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 21: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="779.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="790" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 22: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="799.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="810" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 23: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="819.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="830" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 24: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="839.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="850" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 25: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="859.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="870" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 26: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="879.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="890" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 27: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="899.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="910" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 28: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="919.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="930" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 29: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="939.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="950" y="296" width="18" height="18" rx="3" fill="#fab219"><title>rep_quota, day 30: Tier 2 because 1 of 6 critical elements has no rule</title></rect>
+<text x="959.0" y="309" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<text x="20" y="329" font-size="12" fill="#0b0b0b">promotions</text>
+<text x="362" y="329" font-size="10" fill="#52514e" text-anchor="end">pipelines, ad hoc</text>
+<rect x="370" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 1: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="379.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="390" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 2: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="399.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="410" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 3: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="419.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="430" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 4: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="439.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="450" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 5: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="459.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="470" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 6: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="479.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="490" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 7: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="499.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="510" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 8: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="519.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="530" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 9: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="539.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="550" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 10: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="559.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="570" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 11: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="579.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="590" y="316" width="18" height="18" rx="3" fill="#c3c2b7"><title>promotions, day 12: Unrated because not onboarded yet, so its signals cannot be measured</title></rect>
+<text x="599.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">?</text>
+<rect x="610" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 13: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="619.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="630" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 14: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="639.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="650" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 15: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="659.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="670" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 16: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="679.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="690" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 17: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="699.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="710" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 18: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="719.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="730" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 19: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="739.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="750" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 20: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="759.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="770" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 21: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="779.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="790" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 22: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="799.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="810" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 23: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="819.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="830" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 24: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="839.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="850" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 25: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="859.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="870" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 26: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="879.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="890" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 27: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="899.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="910" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 28: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="919.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="930" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 29: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="939.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="950" y="316" width="18" height="18" rx="3" fill="#fab219"><title>promotions, day 30: Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded</title></rect>
+<text x="959.0" y="329" font-size="10" font-weight="600" fill="#0b0b0b" text-anchor="middle">2</text>
+<rect x="20" y="362" width="14" height="14" rx="3" fill="#0ca30c"/>
+<text x="40" y="373" font-size="12" fill="#0b0b0b">Tier 1: trusted</text>
+<rect x="153" y="362" width="14" height="14" rx="3" fill="#fab219"/>
+<text x="173" y="373" font-size="12" fill="#0b0b0b">2  Tier 2: use with care</text>
+<rect x="345" y="362" width="14" height="14" rx="3" fill="#d03b3b"/>
+<text x="365" y="373" font-size="12" fill="#0b0b0b">3  Tier 3: not fit for decisions</text>
+<rect x="590" y="362" width="14" height="14" rx="3" fill="#c3c2b7"/>
+<text x="610" y="373" font-size="12" fill="#0b0b0b">?  Unrated</text>
+<text x="20" y="396" font-size="11" fill="#52514e">Numbers in the cells repeat the tier, so the chart does not rely on color alone. The same data is in daily-tiers.csv.</text>
+</svg>

@@ -1,0 +1,391 @@
+day,dataset,consumers,quality,freshness,ownership,definitions,lineage,score,tier,protection,reason
+1,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+1,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+1,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+1,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+1,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+2,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+2,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+2,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+2,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+3,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+3,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+3,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+3,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+4,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+4,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+4,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+4,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+5,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+5,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+5,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+5,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+6,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+6,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+6,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+6,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+7,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+7,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+7,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+7,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+8,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+8,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+8,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+8,sales_orders,E P,1.0,0.5,1.0,1.0,1.0,90.0,Tier 2,warn,Tier 2 because last load 30 hours ago against an agreed 24
+8,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+9,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,daily_revenue_summary,E,1.0,0.5,1.0,1.0,1.0,90.0,Tier 2,warn,Tier 2 because last load 30 hours ago against an agreed 24
+9,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+9,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+9,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+9,sales_orders,E P,1.0,0.0,1.0,1.0,1.0,80.0,Tier 3,quarantine,"Tier 3 because last load 54 hours ago, more than twice the agreed 24"
+9,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+10,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+10,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+10,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+10,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+11,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+11,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+11,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+11,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+12,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,promotions,P H,1.0,1.0,1.0,0.778,0.0,,Unrated,treated as Tier 3,"Unrated because not onboarded yet, so its signals cannot be measured"
+12,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+12,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+12,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+13,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+13,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+13,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+13,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+14,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+14,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+14,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+14,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+15,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,price_list,E A P,0.889,1.0,1.0,1.0,1.0,95.6,Tier 3,block,Tier 3 because 1 blocking rule failed
+15,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+15,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+15,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+15,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+16,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+16,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+16,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+16,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+17,customers,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+17,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+17,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+17,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+18,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+18,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+18,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+18,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+18,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+19,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+19,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+19,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+19,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+19,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+20,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+20,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+20,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+20,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+20,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+21,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+21,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+21,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+21,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,sales_forecast_features,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+21,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+22,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+22,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+22,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+22,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+22,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+22,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+23,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+23,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+23,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+23,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+23,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+23,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+24,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+24,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+24,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+24,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+24,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+24,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+25,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+25,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+25,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+25,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+25,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+25,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+25,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+25,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+25,returns,P H,0.875,1.0,1.0,1.0,1.0,95.0,Tier 2,warn,Tier 2 because 1 of 8 rules on critical elements failed
+25,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+25,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+25,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+25,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+26,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+26,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+26,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+26,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+26,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+26,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+27,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+27,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+27,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+27,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+27,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+27,store_targets,E,1.0,1.0,0.5,1.0,1.0,92.5,Tier 3,quarantine,Tier 3 because no owner assigned
+28,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+28,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+28,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+28,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+28,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+28,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+28,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+28,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+28,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+28,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+28,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+28,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+28,store_targets,E,1.0,1.0,0.5,1.0,1.0,92.5,Tier 3,quarantine,Tier 3 because no owner assigned
+29,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+29,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+29,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+29,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+29,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+29,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+29,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+29,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+29,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+29,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+29,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+29,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+29,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,assistant_policy_index,A,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,crm_accounts,H,1.0,1.0,1.0,0.714,1.0,95.7,Tier 2,warn,Tier 2 because 4 of 14 critical elements have no certified definition
+30,customers,E A P,1.0,1.0,0.5,1.0,1.0,92.5,Tier 2,warn,Tier 2 because no steward assigned
+30,daily_revenue_summary,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,price_list,E A P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,products,P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,promotions,P H,1.0,1.0,1.0,0.778,0.0,86.7,Tier 2,warn,Tier 2 because 2 of 9 critical elements have no certified definition; lineage not recorded
+30,rep_quota,H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 2,warn,Tier 2 because 1 of 6 critical elements has no rule
+30,returns,P H,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,sales_forecast_features,A,0.955,1.0,1.0,1.0,1.0,98.2,Tier 2,warn,Tier 2 because 1 of 22 rules on critical elements failed
+30,sales_order_lines,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,sales_orders,E P,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met
+30,store_targets,E,1.0,1.0,1.0,1.0,1.0,100.0,Tier 1,none,Tier 1: every condition met

@@ -1,0 +1,391 @@
+day,dataset,hours_since_load,rules_failed,blocking_failed,owner,steward,measured
+1,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+1,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+1,customers,6,0,0,Customer data lead,Customer data steward,True
+1,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+1,price_list,6,0,0,Pricing lead,Sales data steward,True
+1,products,6,0,0,Product data lead,Product data steward,True
+1,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+1,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+1,returns,6,0,0,Order management lead,Sales data steward,True
+1,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+1,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+1,sales_orders,6,0,0,Order management lead,Sales data steward,True
+1,store_targets,6,0,0,Regional sales director,Sales data steward,True
+2,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+2,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+2,customers,6,0,0,Customer data lead,Customer data steward,True
+2,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+2,price_list,6,0,0,Pricing lead,Sales data steward,True
+2,products,6,0,0,Product data lead,Product data steward,True
+2,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+2,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+2,returns,6,0,0,Order management lead,Sales data steward,True
+2,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+2,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+2,sales_orders,6,0,0,Order management lead,Sales data steward,True
+2,store_targets,6,0,0,Regional sales director,Sales data steward,True
+3,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+3,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+3,customers,6,0,0,Customer data lead,Customer data steward,True
+3,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+3,price_list,6,0,0,Pricing lead,Sales data steward,True
+3,products,6,0,0,Product data lead,Product data steward,True
+3,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+3,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+3,returns,6,0,0,Order management lead,Sales data steward,True
+3,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+3,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+3,sales_orders,6,0,0,Order management lead,Sales data steward,True
+3,store_targets,6,0,0,Regional sales director,Sales data steward,True
+4,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+4,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+4,customers,6,0,0,Customer data lead,Customer data steward,True
+4,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+4,price_list,6,0,0,Pricing lead,Sales data steward,True
+4,products,6,0,0,Product data lead,Product data steward,True
+4,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+4,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+4,returns,6,0,0,Order management lead,Sales data steward,True
+4,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+4,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+4,sales_orders,6,0,0,Order management lead,Sales data steward,True
+4,store_targets,6,0,0,Regional sales director,Sales data steward,True
+5,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+5,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+5,customers,6,0,0,Customer data lead,Customer data steward,True
+5,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+5,price_list,6,0,0,Pricing lead,Sales data steward,True
+5,products,6,0,0,Product data lead,Product data steward,True
+5,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+5,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+5,returns,6,0,0,Order management lead,Sales data steward,True
+5,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+5,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+5,sales_orders,6,0,0,Order management lead,Sales data steward,True
+5,store_targets,6,0,0,Regional sales director,Sales data steward,True
+6,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+6,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+6,customers,6,0,0,Customer data lead,Customer data steward,True
+6,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+6,price_list,6,0,0,Pricing lead,Sales data steward,True
+6,products,6,0,0,Product data lead,Product data steward,True
+6,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+6,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+6,returns,6,0,0,Order management lead,Sales data steward,True
+6,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+6,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+6,sales_orders,6,0,0,Order management lead,Sales data steward,True
+6,store_targets,6,0,0,Regional sales director,Sales data steward,True
+7,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+7,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+7,customers,6,0,0,Customer data lead,Customer data steward,True
+7,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+7,price_list,6,0,0,Pricing lead,Sales data steward,True
+7,products,6,0,0,Product data lead,Product data steward,True
+7,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+7,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+7,returns,6,0,0,Order management lead,Sales data steward,True
+7,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+7,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+7,sales_orders,6,0,0,Order management lead,Sales data steward,True
+7,store_targets,6,0,0,Regional sales director,Sales data steward,True
+8,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+8,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+8,customers,6,0,0,Customer data lead,Customer data steward,True
+8,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+8,price_list,6,0,0,Pricing lead,Sales data steward,True
+8,products,6,0,0,Product data lead,Product data steward,True
+8,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+8,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+8,returns,6,0,0,Order management lead,Sales data steward,True
+8,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+8,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+8,sales_orders,30,0,0,Order management lead,Sales data steward,True
+8,store_targets,6,0,0,Regional sales director,Sales data steward,True
+9,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+9,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+9,customers,6,0,0,Customer data lead,Customer data steward,True
+9,daily_revenue_summary,30,0,0,Finance reporting lead,Sales data steward,True
+9,price_list,6,0,0,Pricing lead,Sales data steward,True
+9,products,6,0,0,Product data lead,Product data steward,True
+9,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+9,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+9,returns,6,0,0,Order management lead,Sales data steward,True
+9,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+9,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+9,sales_orders,54,0,0,Order management lead,Sales data steward,True
+9,store_targets,6,0,0,Regional sales director,Sales data steward,True
+10,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+10,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+10,customers,6,0,0,Customer data lead,Customer data steward,True
+10,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+10,price_list,6,0,0,Pricing lead,Sales data steward,True
+10,products,6,0,0,Product data lead,Product data steward,True
+10,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+10,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+10,returns,6,0,0,Order management lead,Sales data steward,True
+10,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+10,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+10,sales_orders,6,0,0,Order management lead,Sales data steward,True
+10,store_targets,6,0,0,Regional sales director,Sales data steward,True
+11,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+11,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+11,customers,6,0,0,Customer data lead,Customer data steward,True
+11,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+11,price_list,6,0,0,Pricing lead,Sales data steward,True
+11,products,6,0,0,Product data lead,Product data steward,True
+11,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+11,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+11,returns,6,0,0,Order management lead,Sales data steward,True
+11,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+11,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+11,sales_orders,6,0,0,Order management lead,Sales data steward,True
+11,store_targets,6,0,0,Regional sales director,Sales data steward,True
+12,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+12,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+12,customers,6,0,0,Customer data lead,Customer data steward,True
+12,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+12,price_list,6,0,0,Pricing lead,Sales data steward,True
+12,products,6,0,0,Product data lead,Product data steward,True
+12,promotions,6,0,0,Marketing operations lead,Sales data steward,False
+12,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+12,returns,6,0,0,Order management lead,Sales data steward,True
+12,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+12,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+12,sales_orders,6,0,0,Order management lead,Sales data steward,True
+12,store_targets,6,0,0,Regional sales director,Sales data steward,True
+13,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+13,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+13,customers,6,0,0,Customer data lead,Customer data steward,True
+13,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+13,price_list,6,0,0,Pricing lead,Sales data steward,True
+13,products,6,0,0,Product data lead,Product data steward,True
+13,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+13,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+13,returns,6,0,0,Order management lead,Sales data steward,True
+13,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+13,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+13,sales_orders,6,0,0,Order management lead,Sales data steward,True
+13,store_targets,6,0,0,Regional sales director,Sales data steward,True
+14,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+14,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+14,customers,6,0,0,Customer data lead,Customer data steward,True
+14,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+14,price_list,6,0,0,Pricing lead,Sales data steward,True
+14,products,6,0,0,Product data lead,Product data steward,True
+14,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+14,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+14,returns,6,0,0,Order management lead,Sales data steward,True
+14,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+14,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+14,sales_orders,6,0,0,Order management lead,Sales data steward,True
+14,store_targets,6,0,0,Regional sales director,Sales data steward,True
+15,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+15,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+15,customers,6,0,0,Customer data lead,Customer data steward,True
+15,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+15,price_list,6,1,1,Pricing lead,Sales data steward,True
+15,products,6,0,0,Product data lead,Product data steward,True
+15,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+15,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+15,returns,6,0,0,Order management lead,Sales data steward,True
+15,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+15,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+15,sales_orders,6,0,0,Order management lead,Sales data steward,True
+15,store_targets,6,0,0,Regional sales director,Sales data steward,True
+16,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+16,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+16,customers,6,0,0,Customer data lead,Customer data steward,True
+16,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+16,price_list,6,0,0,Pricing lead,Sales data steward,True
+16,products,6,0,0,Product data lead,Product data steward,True
+16,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+16,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+16,returns,6,0,0,Order management lead,Sales data steward,True
+16,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+16,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+16,sales_orders,6,0,0,Order management lead,Sales data steward,True
+16,store_targets,6,0,0,Regional sales director,Sales data steward,True
+17,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+17,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+17,customers,6,0,0,Customer data lead,Customer data steward,True
+17,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+17,price_list,6,0,0,Pricing lead,Sales data steward,True
+17,products,6,0,0,Product data lead,Product data steward,True
+17,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+17,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+17,returns,6,0,0,Order management lead,Sales data steward,True
+17,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+17,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+17,sales_orders,6,0,0,Order management lead,Sales data steward,True
+17,store_targets,6,0,0,Regional sales director,Sales data steward,True
+18,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+18,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+18,customers,6,0,0,Customer data lead,,True
+18,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+18,price_list,6,0,0,Pricing lead,Sales data steward,True
+18,products,6,0,0,Product data lead,Product data steward,True
+18,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+18,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+18,returns,6,0,0,Order management lead,Sales data steward,True
+18,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+18,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+18,sales_orders,6,0,0,Order management lead,Sales data steward,True
+18,store_targets,6,0,0,Regional sales director,Sales data steward,True
+19,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+19,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+19,customers,6,0,0,Customer data lead,,True
+19,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+19,price_list,6,0,0,Pricing lead,Sales data steward,True
+19,products,6,0,0,Product data lead,Product data steward,True
+19,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+19,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+19,returns,6,0,0,Order management lead,Sales data steward,True
+19,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+19,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+19,sales_orders,6,0,0,Order management lead,Sales data steward,True
+19,store_targets,6,0,0,Regional sales director,Sales data steward,True
+20,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+20,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+20,customers,6,0,0,Customer data lead,,True
+20,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+20,price_list,6,0,0,Pricing lead,Sales data steward,True
+20,products,6,0,0,Product data lead,Product data steward,True
+20,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+20,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+20,returns,6,0,0,Order management lead,Sales data steward,True
+20,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+20,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+20,sales_orders,6,0,0,Order management lead,Sales data steward,True
+20,store_targets,6,0,0,Regional sales director,Sales data steward,True
+21,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+21,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+21,customers,6,0,0,Customer data lead,,True
+21,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+21,price_list,6,0,0,Pricing lead,Sales data steward,True
+21,products,6,0,0,Product data lead,Product data steward,True
+21,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+21,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+21,returns,6,0,0,Order management lead,Sales data steward,True
+21,sales_forecast_features,6,0,0,Forecasting lead,Analytics data steward,True
+21,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+21,sales_orders,6,0,0,Order management lead,Sales data steward,True
+21,store_targets,6,0,0,Regional sales director,Sales data steward,True
+22,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+22,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+22,customers,6,0,0,Customer data lead,,True
+22,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+22,price_list,6,0,0,Pricing lead,Sales data steward,True
+22,products,6,0,0,Product data lead,Product data steward,True
+22,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+22,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+22,returns,6,0,0,Order management lead,Sales data steward,True
+22,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+22,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+22,sales_orders,6,0,0,Order management lead,Sales data steward,True
+22,store_targets,6,0,0,Regional sales director,Sales data steward,True
+23,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+23,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+23,customers,6,0,0,Customer data lead,,True
+23,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+23,price_list,6,0,0,Pricing lead,Sales data steward,True
+23,products,6,0,0,Product data lead,Product data steward,True
+23,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+23,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+23,returns,6,0,0,Order management lead,Sales data steward,True
+23,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+23,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+23,sales_orders,6,0,0,Order management lead,Sales data steward,True
+23,store_targets,6,0,0,Regional sales director,Sales data steward,True
+24,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+24,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+24,customers,6,0,0,Customer data lead,,True
+24,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+24,price_list,6,0,0,Pricing lead,Sales data steward,True
+24,products,6,0,0,Product data lead,Product data steward,True
+24,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+24,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+24,returns,6,0,0,Order management lead,Sales data steward,True
+24,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+24,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+24,sales_orders,6,0,0,Order management lead,Sales data steward,True
+24,store_targets,6,0,0,Regional sales director,Sales data steward,True
+25,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+25,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+25,customers,6,0,0,Customer data lead,,True
+25,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+25,price_list,6,0,0,Pricing lead,Sales data steward,True
+25,products,6,0,0,Product data lead,Product data steward,True
+25,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+25,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+25,returns,6,1,0,Order management lead,Sales data steward,True
+25,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+25,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+25,sales_orders,6,0,0,Order management lead,Sales data steward,True
+25,store_targets,6,0,0,Regional sales director,Sales data steward,True
+26,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+26,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+26,customers,6,0,0,Customer data lead,,True
+26,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+26,price_list,6,0,0,Pricing lead,Sales data steward,True
+26,products,6,0,0,Product data lead,Product data steward,True
+26,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+26,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+26,returns,6,0,0,Order management lead,Sales data steward,True
+26,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+26,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+26,sales_orders,6,0,0,Order management lead,Sales data steward,True
+26,store_targets,6,0,0,Regional sales director,Sales data steward,True
+27,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+27,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+27,customers,6,0,0,Customer data lead,,True
+27,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+27,price_list,6,0,0,Pricing lead,Sales data steward,True
+27,products,6,0,0,Product data lead,Product data steward,True
+27,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+27,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+27,returns,6,0,0,Order management lead,Sales data steward,True
+27,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+27,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+27,sales_orders,6,0,0,Order management lead,Sales data steward,True
+27,store_targets,6,0,0,,Sales data steward,True
+28,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+28,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+28,customers,6,0,0,Customer data lead,,True
+28,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+28,price_list,6,0,0,Pricing lead,Sales data steward,True
+28,products,6,0,0,Product data lead,Product data steward,True
+28,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+28,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+28,returns,6,0,0,Order management lead,Sales data steward,True
+28,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+28,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+28,sales_orders,6,0,0,Order management lead,Sales data steward,True
+28,store_targets,6,0,0,,Sales data steward,True
+29,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+29,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+29,customers,6,0,0,Customer data lead,,True
+29,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+29,price_list,6,0,0,Pricing lead,Sales data steward,True
+29,products,6,0,0,Product data lead,Product data steward,True
+29,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+29,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+29,returns,6,0,0,Order management lead,Sales data steward,True
+29,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+29,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+29,sales_orders,6,0,0,Order management lead,Sales data steward,True
+29,store_targets,6,0,0,Regional sales director,Sales data steward,True
+30,assistant_policy_index,6,0,0,Sales operations lead,Knowledge steward,True
+30,crm_accounts,6,0,0,Sales operations lead,Customer data steward,True
+30,customers,6,0,0,Customer data lead,,True
+30,daily_revenue_summary,6,0,0,Finance reporting lead,Sales data steward,True
+30,price_list,6,0,0,Pricing lead,Sales data steward,True
+30,products,6,0,0,Product data lead,Product data steward,True
+30,promotions,6,0,0,Marketing operations lead,Sales data steward,True
+30,rep_quota,6,0,0,Sales operations lead,Sales data steward,True
+30,returns,6,0,0,Order management lead,Sales data steward,True
+30,sales_forecast_features,6,1,0,Forecasting lead,Analytics data steward,True
+30,sales_order_lines,6,0,0,Order management lead,Sales data steward,True
+30,sales_orders,6,0,0,Order management lead,Sales data steward,True
+30,store_targets,6,0,0,Regional sales director,Sales data steward,True

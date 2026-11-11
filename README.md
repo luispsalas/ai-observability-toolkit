@@ -29,7 +29,7 @@ Status: **available** · **next** (the next batch being built) · **planned**. N
 | NIST Generative AI Profile crosswalk | Extends the NIST crosswalk to the twelve risks NIST's Generative AI Profile (AI 600-1) adds for generative systems, such as confabulation and harmful content, where content safety metrics belong | planned |
 | EU AI Act crosswalk | Maps the metrics, and the records a system has to keep, to the obligations of the European Union's AI Act by role (provider or deployer) and risk category, quoting each article from the official text. It shows which duties call for a record rather than a metric, and when each duty applies | planned |
 | [**Data quality dimensions for AI**](data-quality/) | Starts from the six classic dimensions (accuracy, completeness, uniqueness, consistency, timeliness, validity), shows what each becomes when the system's output is generated and which metrics give evidence for it, and adds the one AI needs: whether the data represents the people the system is used on | **available** |
-| [**Data trust score and Trust Tiers**](data-quality/trust-tiers.md) | A design for deciding every day whether a dataset is fit to feed reporting and AI: a score from five signals, tiers with hard conditions, an agreed escalation path when trust drops, a daily exception view and a leadership risk-indicator view. Not yet run on real data | **available** (design) |
+| [**Data trust score and Trust Tiers**](data-quality/trust-tiers.md) | A design for deciding every day whether a dataset is fit to feed reporting and AI: a score from five signals, tiers with hard conditions, an agreed escalation path when trust drops, a daily exception view and a leadership risk-indicator view, with a [worked example on synthetic data](data-quality/example/). Not yet run on real data | **available** (design) |
 | [**Metrics and business goals**](business-goals/) | Starts from the questions the people who fund a system ask, links each to the metrics that answer it, and turns them into a scorecard with an owner, a target and a review cadence per metric, with a labeled fictional example | **available** |
 | Improving what can't be graded | How to make an AI system better when its output has no exact score, using the way a professional editor improves a book as the model | planned |
 
@@ -73,10 +73,10 @@ Python 3, standard library only. The data is plain CSV, so it opens in any sprea
 ```
 data/       metrics.csv (45 metrics), areas.csv (6 areas), business-questions.csv (15 questions), metric-audit.csv, nist-ai-rmf.csv (72 subcategories)
 business-goals/  questions to metrics to scorecard: a README, the generated scorecard template and the Atlas example
-data-quality/  data quality dimensions for AI, and the Trust Tiers design
+data-quality/  data quality dimensions for AI, the Trust Tiers design and its synthetic worked example
 crosswalk/  the NIST AI RMF crosswalk: one CSV of links and a README with findings
 sources/    the NIST AI RMF 1.0 and its Playbook, with citations and how their text was checked, and the registry of every source cited
-tools/      check_data.py (25 rules) and its tests, the NIST extractor, the summary and scorecard generators
+tools/      check_data.py (25 rules) and its tests, the NIST extractor, the summary and scorecard generators, the Trust Tiers example generator
 assets/     the banner
 ```
 
