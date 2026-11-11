@@ -40,3 +40,13 @@ Primary documents this toolkit quotes or maps against, kept here so every claim 
 **Its wording differs from the framework in places.** The subcategory text in the Playbook matches the framework PDF letter for letter for 51 of the 72 subcategories. The other 21 differ in small edits (for example "processes, and procedures" where the framework says "processes, procedures, and practices", or "TEVV" written out in full). The framework PDF is the authority for the subcategory wording in this repository, and the Playbook is quoted only for its guidance.
 
 **Reuse.** The Playbook is a NIST publication, covered by the same [statement](https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications) as the framework. Its reference lists cite other authors' work, which is not reproduced here beyond the citations themselves.
+
+## Sources for the data quality pages
+
+The [data quality dimensions](../data-quality/) and [Trust Tiers](../data-quality/trust-tiers.md) pages cite S73 to S80. Their texts are not kept here, because most of them are not published under terms that allow a copy. Every quotation on those pages was checked word for word against a copy read on November 11, 2026:
+
+- **S75**, the UK's Government Data Quality Framework, from its GOV.UK page. GOV.UK records no change to it since it was first published on December 3, 2020.
+- **S77** (BCBS 239) and **S78**, from the Bank for International Settlements' PDFs. The live site refused automated downloads, so both were read from Internet Archive copies of the same addresses, captured on January 4, 2026 and December 14, 2025. The Bank's page for BCBS 239 lists it as current.
+- **S73**, Article 10 of the EU AI Act, from EUR-Lex.
+- **S79** and **S80**, from the Databricks and Google pages linked in the registry.
+- **S76**, ISO/IEC 25012, only from ISO's public page for the standard. The standard itself was not read.
